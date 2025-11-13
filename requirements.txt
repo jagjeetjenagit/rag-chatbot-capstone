@@ -1,0 +1,38 @@
+# Vector Database - Persistent storage for document embeddings
+chromadb==0.3.26
+
+# LLM Framework - Orchestrates chains, prompts, and document processing
+langchain==0.0.350
+langchain-community==0.0.10
+
+# Embedding Model - Generates semantic embeddings for text chunks
+sentence-transformers==2.2.2
+
+# Web UI Frameworks - Interactive interfaces for chatbot
+gradio==3.50.2
+streamlit==1.28.0
+
+# Document Processing - Extract text from various file formats
+PyPDF2==3.0.1
+python-docx==1.1.0
+
+# API Framework - Optional REST API endpoints
+fastapi==0.104.1
+uvicorn==0.24.0
+
+# LLM API Support - Integration with OpenAI and Google models
+openai==1.3.7
+
+# Utilities - Environment variables and data processing
+python-dotenv==1.0.0
+numpy==1.24.3
+tiktoken==0.5.2
+
+# Testing - Unit tests, coverage, and mocking
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Development - Code formatting and linting
+black==23.11.0
+flake8==6.1.0

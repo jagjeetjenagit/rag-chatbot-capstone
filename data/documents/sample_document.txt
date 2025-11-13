@@ -1,0 +1,17 @@
+
+        This is a sample document for the RAG chatbot ingestion pipeline.
+        
+        The pipeline supports PDF, TXT, and DOCX files. It recursively loads files from the data/documents
+        directory, extracts text, cleans it by normalizing whitespace and removing null characters, and then
+        splits the text into chunks of 500-800 characters with 10% overlap.
+        
+        Each chunk is assigned a unique ID in the format: <source>_<chunk_index>. The chunks also include
+        metadata such as the source filename and chunk index.
+        
+        This chunking strategy ensures efficient retrieval by creating manageable text segments that can be
+        embedded and stored in a vector database. The overlap between chunks helps maintain context across
+        chunk boundaries, which is important for answering questions that might span multiple chunks.
+        
+        The ingestion pipeline includes error handling and logging to track the processing of each document.
+        It can handle multiple file formats and encodings, making it robust for real-world document processing.
+        
