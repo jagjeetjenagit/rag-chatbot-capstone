@@ -1,0 +1,679 @@
+# TechCorp Revenue Attribution & Team Contribution Analysis 2025
+
+**Report Period**: January 1 - September 30, 2025
+**Prepared by**: Revenue Operations & Finance
+**Report Date**: October 1, 2025
+**Classification**: Confidential - Internal Use
+
+---
+
+## Executive Summary
+
+TechCorp generated $204.5M in revenue across Q1-Q3 2025, with clear attribution to team contributions: Sales directly closed $204.5M, Customer Success drove $24.6M in expansion, Engineering enabled $198M in platform value, Product influenced $189M through product-led growth, Marketing generated $142M in influenced pipeline, and Data Science contributed $67M through AI features and optimizations. This multi-touch attribution model reveals the interconnected value creation across the organization.
+
+**Key Revenue Metrics**:
+- Total Revenue: $204.5M
+- Sales-Closed: $204.5M (100%)
+- CS Expansion: $24.6M (12% of base)
+- Product-Led: $189M (92% attributed to product)
+- Marketing-Influenced: $142M (70% of pipeline)
+- Engineering Value: $198M (platform/features)
+- Data Science Impact: $67M (AI products + savings)
+
+---
+
+## Revenue Overview
+
+### Total Revenue by Quarter
+
+**Q1 2025**: $62.8M
+- New Business: $48.2M (77%)
+- Expansion: $8.4M (13%)
+- Renewals: $6.2M (10%)
+
+**Q2 2025**: $73.2M
+- New Business: $56.8M (78%)
+- Expansion: $9.6M (13%)
+- Renewals: $6.8M (9%)
+
+**Q3 2025**: $68.5M
+- New Business: $51.5M (75%)
+- Expansion: $6.6M (10%)
+- Renewals: $10.4M (15%)
+
+**Total Q1-Q3**: $204.5M
+- New Business: $156.5M (77%)
+- Expansion: $24.6M (12%)
+- Renewals: $23.4M (11%)
+
+---
+
+## Sales Team Attribution
+
+**Total Revenue Closed**: $204.5M
+**Team Size**: 80 sales professionals
+**Revenue per Rep**: $2.56M average
+
+### Revenue by Sales Segment
+
+**Enterprise Sales Team** (18 AEs)
+- Revenue: $89M (43% of total)
+- Deals: 127
+- Average Deal: $701K
+- Revenue per AE: $4.94M
+- Top Contributor: Sarah Chen ($18.2M)
+
+**Key Wins**:
+1. Goldman Sachs: $4.2M (Marcus Rodriguez)
+2. IBM: $2.1M (Robert Taylor)
+3. Deloitte: $1.8M (Brian Cooper)
+4. McKinsey: $1.6M (Sarah Chen)
+5. JP Morgan: $1.4M (Marcus Rodriguez)
+
+**Mid-Market Sales Team** (34 AEs)
+- Revenue: $91M (45% of total)
+- Deals: 473
+- Average Deal: $192K
+- Revenue per AE: $2.68M
+- Top Contributor: Jessica Martinez ($5.2M)
+
+**Key Segments**:
+- Technology: $32M (35%)
+- Financial Services: $27M (30%)
+- Healthcare: $18M (20%)
+- Retail: $14M (15%)
+
+**SMB Sales Team** (16 AEs)
+- Revenue: $24.5M (12% of total)
+- Deals: 351
+- Average Deal: $70K
+- Revenue per AE: $1.53M
+- Top Contributor: David Park ($2.1M)
+
+**Growth Drivers**:
+- Self-serve signups: 234 deals
+- Free trial conversions: 117 deals
+- Product-led growth: 67% of SMB deals
+
+### Sales Individual Performance
+
+**Top 10 Revenue Generators**:
+
+1. **Sarah Chen** (VP Sales) - $18.2M
+   - Enterprise Focus
+   - 78 deals closed
+   - Win Rate: 42%
+   - Key: 3 Fortune 500 accounts
+
+2. **Marcus Rodriguez** (Enterprise AE) - $12.4M
+   - Large Deals Specialist
+   - 12 deals (avg $1.03M)
+   - Win Rate: 48%
+   - Key: Goldman Sachs $4.2M
+
+3. **Brian Cooper** (Enterprise AE) - $6.8M
+   - Account Expansion
+   - 14 deals
+   - Upsell Focus: 6 existing accounts
+   - Win Rate: 35%
+
+4. **Jessica Martinez** (Mid-Market AE) - $5.2M
+   - Tech Sector
+   - 47 deals
+   - Fast Sales Cycle: 32 days avg
+   - Win Rate: 38%
+
+5. **Robert Taylor** (Enterprise AE) - $4.6M
+   - Financial Services
+   - 9 deals (avg $511K)
+   - Key: IBM $2.1M
+   - Win Rate: 30%
+
+6. **Amanda Chen** (Mid-Market AE) - $3.8M
+   - Healthcare Focus
+   - 28 deals
+   - Cross-sell Expert
+   - Win Rate: 34%
+
+7. **Michael Lee** (Mid-Market AE) - $3.2M
+   - Retail Sector
+   - 34 deals
+   - High Volume
+   - Win Rate: 32%
+
+8. **David Park** (SMB AE) - $2.1M
+   - Product-Led
+   - 89 deals
+   - Fast Close: 18 days avg
+   - Win Rate: 40%
+
+9. **Lisa Wang** (Enterprise AE) - $1.9M
+   - New Logos
+   - 6 deals
+   - Prospecting Expert
+   - Win Rate: 28%
+
+10. **Tom Wilson** (Mid-Market AE) - $1.8M
+    - Technology
+    - 23 deals
+    - Strategic Deals
+    - Win Rate: 31%
+
+### Sales Team Productivity
+
+**Quota Attainment**:
+- >100%: 18 reps (22%) - $67M revenue
+- 80-100%: 42 reps (53%) - $112M revenue
+- 50-80%: 16 reps (20%) - $22M revenue
+- <50%: 4 reps (5%) - $3.5M revenue
+
+**Activity Metrics (per rep)**:
+- Calls: 12.4/day
+- Emails: 18.7/day
+- Meetings: 3.2/day
+- Demos: 1.1/day
+
+**Conversion Rates**:
+- Lead → Opportunity: 18%
+- Opportunity → Proposal: 45%
+- Proposal → Close: 28%
+- Overall Win Rate: 28%
+
+---
+
+## Customer Success Attribution
+
+**Expansion Revenue**: $24.6M
+**Team Size**: 45 CSMs
+**Expansion per CSM**: $547K average
+
+### Expansion Revenue Breakdown
+
+**Upsells**: $18.2M (74%)
+- Tier Upgrades: $12.4M
+- Feature Add-ons: $5.8M
+
+**Cross-sells**: $6.4M (26%)
+- New Products: $4.2M
+- Additional Modules: $2.2M
+
+### CS Individual Performance
+
+**Top 10 Expansion Drivers**:
+
+1. **Nicole Davis** (VP Customer Success) - $4.8M
+   - Strategic Accounts: 34
+   - Retention: 100%
+   - NPS: 82
+
+2. **Christopher Lee** (Enterprise CSM) - $3.2M
+   - Accounts: 18 enterprise
+   - Expansion Rate: 34%
+   - At-Risk Saved: 6 accounts ($2.4M)
+
+3. **Michelle Garcia** (CSM) - $2.4M
+   - Accounts: 28 mid-market
+   - Upsell Focus
+   - QBRs: 84 conducted
+
+4. **Tom Anderson** (CSM) - $1.8M
+   - Accounts: 24
+   - Cross-sell Specialist
+   - Product Adoption: 89%
+
+5. **Lisa Kim** (Enterprise CSM) - $1.6M
+   - Accounts: 12 enterprise
+   - Strategic QBRs
+   - Executive Relationships
+
+**Expansion Tactics**:
+- Quarterly Business Reviews: 89% correlation with expansion
+- Product Training: +45% feature adoption
+- Executive Sponsorship: +67% expansion likelihood
+- Health Score >80: 78% expansion rate
+
+### Retention Value
+
+**Gross Retention**: 96.5%
+**Retained Revenue**: $197.3M (vs $204.5M new ARR)
+**Churn**: $7.2M (26 customers)
+
+**Saved At-Risk Accounts**: 23 accounts ($8.4M ARR)
+- Early Warning System: Prevented 18 churns
+- Executive Escalation: Saved 5 accounts
+
+**Retention Attribution**:
+- CS Relationship Management: 67%
+- Product Quality: 23%
+- Pricing/Value: 10%
+
+---
+
+## Product Management Attribution
+
+**Product-Attributed Revenue**: $189M (92% of total revenue)
+**Team Size**: 25 Product Managers
+**Value per PM**: $7.56M
+
+### Product-Led Revenue
+
+**AI Product Line** ($96.2M - 47%)
+- PMs: Jennifer Wu (VP), Emma Thompson, Mark Johnson
+- Features: 8 AI capabilities
+- Customers: 247
+- ASP: $389K
+- Attribution: Product strategy & execution
+
+**Cloud Platform** ($73.6M - 36%)
+- PMs: Amanda Foster, Kevin Zhang
+- Multi-cloud support
+- Customers: 340
+- ASP: $216K
+- Attribution: Platform decisions
+
+**Enterprise Suite** ($26.5M - 13%)
+- PMs: Tom Richards, Sarah Kim
+- Security, compliance, RBAC
+- Customers: 127 enterprise
+- ASP: $209K
+- Attribution: Feature prioritization
+
+**Self-Service Product** ($4.8M - 2%)
+- PM: Emily Chen
+- PLG Motion
+- Customers: 234
+- ASP: $21K
+- Attribution: Self-serve enablement
+
+### Product Impact on Revenue
+
+**Feature Influence on Deals**:
+- AI Features: Mentioned in 67% of enterprise deals ($59.6M)
+- Multi-Cloud: Key for 34 deals ($8.6M)
+- Security: Enabled 12 deals ($4.2M)
+- Real-time Analytics: 189 customers ($6.2M)
+- Self-Service: 234 deals ($4.8M)
+
+**Product NPS Correlation**:
+- Customers with NPS >70: 18% net retention
+- Customers with NPS 50-70: 12% net retention
+- Customers with NPS <50: -4% churn
+
+**Time to Value Impact**:
+- <1 week activation: 89% retention, 24% expansion
+- 1-4 weeks: 94% retention, 18% expansion
+- >4 weeks: 87% retention, 8% expansion
+
+---
+
+## Engineering Attribution
+
+**Platform Value**: $198M
+**Team Size**: 150 engineers
+**Value per Engineer**: $1.32M
+
+### Engineering Revenue Enablement
+
+**Platform Scalability** ($198M enabled)
+- Capacity: 4M users (from 1M)
+- Uptime: 99.95%
+- Performance: -40% latency
+- Attribution: Without engineering, platform couldn't support $198M ARR
+
+**Feature Development** ($127 features → $204.5M)
+- AI Engine: $96.2M (David Zhang, Alex Kumar)
+- Real-time Analytics: $6.2M (Rachel Moore team)
+- Multi-Cloud: $8.6M (Michael Chang team)
+- Self-Service: $4.8M (Daniel Kim team)
+- Mobile: $12.4M engagement (Frontend team)
+
+**Performance Improvements** ($2.4M cost savings, NPS +8)
+- Page Load: -40% (James Wilson)
+- API Speed: -35%
+- Infrastructure: -28% cost per user
+- Impact: Prevented churn ($4.2M), improved NPS → retention
+
+**Security & Compliance** ($4.2M deals enabled)
+- SOC 2: 12 enterprise deals (Olivia Martinez)
+- GDPR: EU expansion
+- HIPAA: Healthcare customers
+- Attribution: Deal blockers removed
+
+### Engineering Individual Contribution
+
+**Top Revenue-Enabling Engineers**:
+
+1. **Alex Kumar** (Staff Eng) - $7.2M value
+   - Platform redesign: Enabled 300% scale
+   - Attribution: Platform supports $198M ARR, 42,340 lines code
+
+2. **David Zhang** (Principal Eng) - $12.4M direct
+   - AI recommendation engine
+   - 247 customers using AI features
+   - $96.2M product line (key contributor)
+
+3. **James Wilson** (Staff Eng) - $2.4M savings + retention
+   - Performance: -40% latency
+   - Cost: $2.4M saved
+   - NPS: +8 points (prevented churn)
+
+4. **Michael Chang** (Staff Eng) - $8.6M deals
+   - Multi-cloud: 34 enterprise deals
+   - Market expansion enabler
+
+5. **Daniel Kim** (Senior Eng) - $4.8M + savings
+   - Self-service portal
+   - 234 customers, -40% support tickets ($1.2M savings)
+
+---
+
+## Marketing Attribution
+
+**Pipeline Influenced**: $142M (70% of total pipeline)
+**Team Size**: 58 marketers
+**Pipeline per Marketer**: $2.45M
+
+### Marketing Channel Attribution
+
+**Organic/SEO** ($34M pipeline - 24%)
+- Team: Content Marketing (12)
+- Traffic: 1.4M visits
+- Leads: 4,200
+- Cost per Lead: $42
+- Closed Revenue: $18.4M
+
+**Paid Search** ($28M pipeline - 20%)
+- Team: Demand Gen (8)
+- Spend: $840K
+- Leads: 2,340
+- Cost per Lead: $359
+- Closed Revenue: $15.2M
+
+**Events/Conferences** ($24M pipeline - 17%)
+- Team: Field Marketing (6)
+- Events: 18
+- Leads: 1,560
+- Cost per Lead: $538
+- Closed Revenue: $12.8M
+
+**Email Marketing** ($22M pipeline - 15%)
+- Team: Marketing Ops (4)
+- Campaigns: 67
+- Leads: 3,120
+- Cost per Lead: $32
+- Closed Revenue: $11.4M
+
+**Social Media** ($18M pipeline - 13%)
+- Team: Social/Community (4)
+- Followers: 87K (+67%)
+- Leads: 1,872
+- Cost per Lead: $156
+- Closed Revenue: $9.2M
+
+**Partner Marketing** ($16M pipeline - 11%)
+- Team: Partner Marketing (4)
+- Partners: 23
+- Leads: 890
+- Closed Revenue: $8.4M
+
+### Marketing Individual Performance
+
+**Top Pipeline Generators**:
+
+1. **Lisa Anderson** (VP Marketing) - $48M pipeline
+   - Strategy & Leadership
+   - Team: 58 marketers
+   - Campaigns: AI Innovation Series ($28M)
+
+2. **Tom Richards** (Content Marketing) - $24M pipeline
+   - Content Pieces: 89
+   - SEO Leadership
+   - Organic Traffic: 1.4M
+
+3. **Sarah Kim** (Demand Gen Director) - $38M pipeline
+   - Paid Campaigns: $28M spend
+   - Lead Gen: 5,364 MQLs
+   - Conversion Optimization
+
+4. **Emily Chen** (Product Marketing) - $18M pipeline
+   - Product Launches: 8
+   - Sales Enablement
+   - Win Rate: +6% improvement
+
+5. **David Lee** (Brand/PR) - $12M pipeline
+   - Press: 127 mentions
+   - Brand Value: $4.2M
+   - Awareness: +45%
+
+### Marketing ROI
+
+**Total Marketing Spend**: $15.8M
+**Pipeline Influenced**: $142M
+**Closed Revenue (influenced)**: $72.4M
+**ROI**: 799% (pipeline), 358% (closed revenue)
+
+**By Channel ROI**:
+- Organic: 810% (highest)
+- Email: 698%
+- Paid Search: 620%
+- Events: 580%
+- Social: 440%
+
+---
+
+## Data Science Attribution
+
+**Revenue Impact**: $67M
+**Cost Savings**: $12.4M
+**Team Size**: 22 data scientists
+**Value per DS**: $3.05M
+
+### Data Science Revenue Contribution
+
+**AI Product Features** ($12.4M direct revenue)
+- Recommendation Engine (Rachel Moore): $12.4M ARR
+  * 247 customers
+  * +23% engagement
+  * 87% accuracy
+
+- Predictive Analytics (Kevin Brown): $8.2M ARR
+  * 189 customers
+  * Forecasting models
+
+- Dynamic Pricing (Kevin Brown): $24.5M revenue lift
+  * +12% revenue per customer
+  * 340 customers using
+  * A/B tested: 18% improvement
+
+**Churn Prevention** ($8.4M saved)
+- Churn Prediction Model (Sophie Anderson)
+  * Accuracy: 91%
+  * At-risk identified: 34 accounts
+  * Saved: 23 accounts ($8.4M ARR)
+
+**Lead Scoring** (Sales productivity)
+- Model (David Kim)
+  * +32% conversion
+  * -18% CAC
+  * Sales time saved: 40%
+
+**Optimization** ($12.4M in savings)
+- Cloud Cost: $3.6M/year saved
+- Process Automation: 14,000 hours
+- Forecasting: 94% accuracy
+
+### Data Science Individual Performance
+
+1. **Rachel Moore** (Principal DS) - $12.4M revenue
+   - Recommendation engine
+   - 247 customers, 87% accuracy
+
+2. **Kevin Brown** (Director DS) - $32.7M impact
+   - Dynamic pricing: $24.5M lift
+   - Predictive models: $8.2M
+
+3. **Sophie Anderson** (Senior DS) - $8.4M saved
+   - Churn prediction: 23 accounts
+   - 91% accuracy
+
+4. **David Kim** (Data Scientist) - CAC -18%
+   - Lead scoring model
+   - Sales conversion +32%
+
+---
+
+## Multi-Touch Attribution Model
+
+### Revenue Attribution Framework
+
+**Primary Touch** (Direct Closer): 40% credit
+- Sales: Closes deal
+
+**Product Touch** (Enabler): 30% credit
+- Product: Features that won deal
+- Engineering: Platform that enabled
+
+**Marketing Touch** (Generator): 20% credit
+- Marketing: First touch, influenced pipeline
+
+**Customer Success Touch** (Expansion): 10% credit
+- CS: Upsells, expansions, renewals
+
+### Example: $1M Enterprise Deal
+
+**Goldman Sachs - $4.2M Deal** (Marcus Rodriguez)
+
+**Attribution**:
+- **Sales (40%)**: $1.68M - Marcus Rodriguez closed
+- **Product (30%)**: $1.26M - AI features key to deal (Jennifer Wu, David Zhang)
+- **Marketing (20%)**: $840K - Webinar first touch, nurture (Lisa Anderson team)
+- **Engineering (10%)**: $420K - Platform demo, security (Alex Kumar, Olivia Martinez)
+
+**Team Credits**:
+- Marcus Rodriguez (AE): $1.68M
+- Jennifer Wu (VP Product): $630K (AI product)
+- David Zhang (Eng): $378K (AI engine)
+- Alex Kumar (Eng): $252K (platform)
+- Lisa Anderson (Marketing): $420K (webinar)
+- Olivia Martinez (Eng): $168K (security)
+
+---
+
+## Cross-Functional Revenue Impact
+
+### Collaboration Multiplier
+
+**Solo Department**: Baseline 1.0x
+**2 Departments**: 1.4x effectiveness
+**3+ Departments**: 2.1x effectiveness
+
+**Evidence**:
+- Sales Only: $24.5M (SMB, short cycle)
+- Sales + Marketing: $91M (Mid-market, influenced)
+- Sales + Marketing + Product + Eng: $89M (Enterprise, complex)
+
+### High-Impact Collaborations
+
+**1. Enterprise Expansion** ($89M)
+- Sales (34), CS (12), Product (6), Eng (18)
+- Multi-touch: Every department contributed
+- Result: 127 deals, $89M
+
+**2. AI Product Line** ($96.2M)
+- Product (4), Eng (15), Data Science (8), Sales (80), Marketing (18)
+- Collaboration Score: 9.2/10
+- Result: Market-leading AI features
+
+**3. Product-Led Growth** ($4.8M + 234 deals)
+- Product (2), Eng (4), Marketing (12), Sales (16)
+- Self-serve motion
+- Result: -40% CAC, fast growth
+
+---
+
+## Revenue Efficiency Metrics
+
+### Cost to Acquire (CAC)
+
+**Overall CAC**: $18,400
+- Sales Cost: $37.2M
+- Marketing Cost: $15.8M
+- Total: $53M
+- New Customers: 730
+- CAC: $72,603/customer
+
+**Wait, recalculating correctly**:
+- Revenue $204.5M / Avg deal $215K = 951 deals
+- New customers: ~730 (accounting for multi-year, expansions)
+- CAC: $53M / 730 = $72,603 per NEW customer
+
+**By Segment**:
+- Enterprise: $124K CAC (high touch)
+- Mid-Market: $52K CAC
+- SMB: $8.4K CAC (product-led)
+
+### Lifetime Value (LTV)
+
+**Average LTV**: $890K
+**LTV/CAC Ratio**: 48:1 (exceptional)
+**Payback Period**: 11 months
+
+### Revenue per Employee
+
+**Total Revenue**: $204.5M
+**Total Employees**: 523
+**Revenue per Employee**: $391K
+
+**By Department**:
+- Sales: $2.56M per rep
+- CS: $547K per CSM (expansion)
+- Engineering: $1.32M per engineer (platform value)
+- Product: $7.56M per PM (product attribution)
+- Marketing: $2.45M per marketer (pipeline)
+- Data Science: $3.05M per DS (revenue + savings)
+
+---
+
+## Insights & Recommendations
+
+### Key Findings
+
+1. **Multi-Touch Is Real**: 89M enterprise revenue required all departments
+2. **Product ROI Highest**: 2,204% ROI, $7.56M per PM
+3. **Engineering Enables Scale**: $198M platform value
+4. **Marketing Drives Pipeline**: 70% of deals influenced
+5. **CS Expansion Critical**: $24.6M (12% growth)
+6. **Data Science Multiplier**: $67M impact + $12.4M savings
+
+### 2026 Recommendations
+
+1. **Invest in Product**: Hire 5 PMs (+$11M budget)
+   - Highest ROI team
+   - Product-led growth
+
+2. **Scale Engineering**: 30 new engineers (+$16M)
+   - Platform must support $375M ARR
+   - AI/ML features key differentiator
+
+3. **Expand Sales**: 20 new reps (+$8M)
+   - Enterprise focus
+   - International markets
+
+4. **Grow Marketing**: +$6M budget
+   - Brand awareness
+   - Demand generation scale
+
+5. **Double Data Science**: +12 data scientists
+   - AI product competitive advantage
+   - Optimization savings
+
+6. **CS for Expansion**: +12 CSMs
+   - Target 120% net retention
+   - $32M expansion goal
+
+---
+
+**Report Compiled**: October 1, 2025
+**Next Update**: January 15, 2026
+**Prepared By**: Revenue Operations & Finance
+**Approved By**: Emily Rodriguez (CFO), David Park (COO)

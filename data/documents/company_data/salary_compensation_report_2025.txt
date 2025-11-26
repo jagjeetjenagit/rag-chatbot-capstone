@@ -1,0 +1,449 @@
+# TechCorp Comprehensive Salary Report 2025
+
+**Report Period**: January 1 - November 26, 2025
+**Prepared by**: Finance & HR Departments
+**Classification**: Confidential - Executive Access Only
+
+---
+
+## Executive Summary
+
+TechCorp's total compensation budget for 2025 is $142.5M, representing a 15.2% increase from 2024. The company employs 523 people with an average salary of $156,400. Engineering remains the highest-paid department with an average of $178,200.
+
+**Key Highlights**:
+- Total Payroll: $142.5M annually
+- Average Salary: $156,400
+- Median Salary: $138,000
+- Salary Range: $70,000 - $450,000
+- Average Raise: 8.7%
+- Retention Rate: 88.8%
+
+---
+
+## Salary Distribution by Level
+
+### Individual Contributor Levels
+
+**Level 1 (Entry/Junior)**
+- Headcount: 87 employees
+- Salary Range: $70,000 - $100,000
+- Average Salary: $84,500
+- Median Salary: $85,000
+- Total Annual Cost: $7.35M
+
+**Level 2 (Mid-Level)**
+- Headcount: 142 employees
+- Salary Range: $100,000 - $140,000
+- Average Salary: $121,800
+- Median Salary: $120,000
+- Total Annual Cost: $17.30M
+
+**Level 3 (Senior)**
+- Headcount: 98 employees
+- Salary Range: $140,000 - $190,000
+- Average Salary: $164,300
+- Median Salary: $162,000
+- Total Annual Cost: $16.10M
+
+**Level 4 (Staff/Principal)**
+- Headcount: 34 employees
+- Salary Range: $190,000 - $250,000
+- Average Salary: $218,500
+- Median Salary: $215,000
+- Total Annual Cost: $7.43M
+
+**Level 5 (Senior Staff/Distinguished)**
+- Headcount: 12 employees
+- Salary Range: $250,000 - $350,000
+- Average Salary: $287,600
+- Median Salary: $280,000
+- Total Annual Cost: $3.45M
+
+### Management Levels
+
+**M1 (Manager)**
+- Headcount: 62 employees
+- Salary Range: $150,000 - $200,000
+- Average Salary: $174,200
+- Median Salary: $172,000
+- Total Annual Cost: $10.80M
+
+**M2 (Senior Manager)**
+- Headcount: 28 employees
+- Salary Range: $200,000 - $270,000
+- Average Salary: $232,800
+- Median Salary: $230,000
+- Total Annual Cost: $6.52M
+
+**M3 (Director)**
+- Headcount: 24 employees
+- Salary Range: $270,000 - $350,000
+- Average Salary: $304,500
+- Median Salary: $300,000
+- Total Annual Cost: $7.31M
+
+**M4 (Vice President)**
+- Headcount: 18 employees
+- Salary Range: $350,000 - $500,000
+- Average Salary: $412,300
+- Median Salary: $405,000
+- Total Annual Cost: $7.42M
+
+**E1 (Executive/C-Suite)**
+- Headcount: 18 employees
+- Salary Range: $360,000 - $450,000
+- Average Salary: $403,900
+- Median Salary: $400,000
+- Total Annual Cost: $7.27M
+
+---
+
+## Salary by Department
+
+### Engineering (150 employees)
+- **Total Annual Payroll**: $26.73M
+- **Average Salary**: $178,200
+- **Median Salary**: $165,000
+- **Salary Range**: $85,000 - $320,000
+- **% of Total Payroll**: 18.8%
+
+**Engineering Breakdown**:
+- Junior Engineers (L1): $85,000 - $100,000 (avg: $92,500)
+- Software Engineers (L2): $110,000 - $145,000 (avg: $128,400)
+- Senior Engineers (L3): $145,000 - $190,000 (avg: $168,200)
+- Staff Engineers (L4): $190,000 - $250,000 (avg: $221,500)
+- Principal Engineers (L5): $250,000 - $320,000 (avg: $285,000)
+- Engineering Managers: $165,000 - $280,000 (avg: $218,600)
+
+### Product Management (25 employees)
+- **Total Annual Payroll**: $4.56M
+- **Average Salary**: $182,400
+- **Median Salary**: $175,000
+- **Salary Range**: $115,000 - $300,000
+- **% of Total Payroll**: 3.2%
+
+**Product Breakdown**:
+- Associate PM: $115,000 - $135,000
+- Product Manager: $135,000 - $165,000
+- Senior PM: $165,000 - $210,000
+- Principal PM: $210,000 - $260,000
+- VP Product: $300,000
+
+### Sales (80 employees)
+- **Total Annual Payroll**: $21.84M (base only)
+- **Total Comp (with commissions)**: $38.2M
+- **Average Base Salary**: $273,000
+- **Average Total Comp**: $477,500
+- **Salary Range**: $120,000 - $290,000 (base)
+- **% of Total Payroll**: 26.8% (with commissions)
+
+**Sales Breakdown**:
+- Sales Development Rep: $70,000 - $90,000 (OTE: $110K - $140K)
+- Account Executive: $140,000 - $160,000 (OTE: $280K - $320K)
+- Senior AE: $150,000 - $180,000 (OTE: $300K - $360K)
+- Enterprise AE: $160,000 - $200,000 (OTE: $320K - $550K)
+- Sales Manager: $180,000 - $220,000 (OTE: $270K - $330K)
+- Sales Director: $220,000 - $270,000 (OTE: $330K - $540K)
+- VP Sales: $290,000 (OTE: $580K)
+
+### Marketing (35 employees)
+- **Total Annual Payroll**: $4.29M
+- **Average Salary**: $122,600
+- **Median Salary**: $118,000
+- **Salary Range**: $75,000 - $240,000
+- **% of Total Payroll**: 3.0%
+
+**Marketing Breakdown**:
+- Marketing Coordinator: $75,000 - $95,000
+- Marketing Manager: $115,000 - $135,000
+- Senior Marketing Manager: $135,000 - $170,000
+- Marketing Director: $170,000 - $220,000
+- VP Marketing: $240,000
+
+### Customer Success (45 employees)
+- **Total Annual Payroll**: $4.95M
+- **Average Salary**: $110,000
+- **Median Salary**: $105,000
+- **Salary Range**: $75,000 - $260,000
+- **% of Total Payroll**: 3.5%
+
+### Data Science & Analytics (30 employees)
+- **Total Annual Payroll**: $5.82M
+- **Average Salary**: $194,000
+- **Median Salary**: $185,000
+- **Salary Range**: $95,000 - $280,000
+- **% of Total Payroll**: 4.1%
+
+### Human Resources (20 employees)
+- **Total Annual Payroll**: $2.38M
+- **Average Salary**: $119,000
+- **Median Salary**: $112,000
+- **Salary Range**: $85,000 - $270,000
+- **% of Total Payroll**: 1.7%
+
+### Finance (30 employees)
+- **Total Annual Payroll**: $4.14M
+- **Average Salary**: $138,000
+- **Median Salary**: $128,000
+- **Salary Range**: $85,000 - $380,000
+- **% of Total Payroll**: 2.9%
+
+### IT & Security (25 employees)
+- **Total Annual Payroll**: $3.96M
+- **Average Salary**: $158,400
+- **Median Salary**: $150,000
+- **Salary Range**: $95,000 - $270,000
+- **% of Total Payroll**: 2.8%
+
+---
+
+## 2025 Salary Increases & Raises
+
+### Overall Raise Statistics
+- **Employees Receiving Raises**: 478 (91.4%)
+- **Average Raise**: 8.7%
+- **Median Raise**: 7.5%
+- **Total Raise Budget**: $11.2M
+- **Range**: 0% - 25%
+
+### Raises by Performance Rating
+
+**Exceptional (E) - Top 10%**
+- Employees: 52
+- Average Raise: 15.8%
+- Range: 12% - 25%
+- Promotion Rate: 67%
+
+**Exceeds Expectations (EE) - 20%**
+- Employees: 105
+- Average Raise: 10.4%
+- Range: 8% - 15%
+- Promotion Rate: 28%
+
+**Meets Expectations (ME) - 65%**
+- Employees: 340
+- Average Raise: 7.2%
+- Range: 5% - 10%
+- Promotion Rate: 8%
+
+**Needs Improvement (NI) - 4%**
+- Employees: 21
+- Average Raise: 2.1%
+- Range: 0% - 4%
+- Promotion Rate: 0%
+
+**Unsatisfactory (U) - 1%**
+- Employees: 5
+- Average Raise: 0%
+- Action: Performance improvement or termination
+
+### Raises by Department
+
+| Department | Avg Raise | Budget | Top Performer Raise |
+|------------|-----------|--------|---------------------|
+| Engineering | 9.8% | $2.4M | 18.5% |
+| Sales | 11.2% | $2.8M | 25% (commission-based) |
+| Product | 9.5% | $420K | 16% |
+| Marketing | 8.4% | $340K | 14% |
+| Customer Success | 7.8% | $370K | 12% |
+| Data Science | 10.2% | $560K | 17% |
+| Finance | 7.5% | $295K | 11% |
+| HR | 8.1% | $185K | 13% |
+| IT & Security | 9.1% | $345K | 15% |
+
+### Promotion Statistics (2025)
+
+**Total Promotions**: 89 employees (17% of workforce)
+
+**Promotions by Level**:
+- L1 → L2: 28 promotions (avg raise: 18%)
+- L2 → L3: 24 promotions (avg raise: 15%)
+- L3 → L4: 16 promotions (avg raise: 14%)
+- L4 → L5: 5 promotions (avg raise: 12%)
+- IC → Manager: 8 promotions (avg raise: 16%)
+- Manager → Senior Manager: 5 promotions (avg raise: 13%)
+- Senior Manager → Director: 3 promotions (avg raise: 12%)
+
+**Top Promotion Reasons**:
+1. Exceptional performance (45%)
+2. Increased scope/responsibility (32%)
+3. Critical skills (15%)
+4. Retention/counter-offer (8%)
+
+---
+
+## Compensation by Geography
+
+### San Francisco HQ (280 employees)
+- Average Salary: $168,400
+- Cost of Living Adjustment: Base (100%)
+- Total Payroll: $47.15M
+
+### New York (95 employees)
+- Average Salary: $162,800
+- Cost of Living Adjustment: 97%
+- Total Payroll: $15.47M
+
+### Austin (70 employees)
+- Average Salary: $142,600
+- Cost of Living Adjustment: 85%
+- Total Payroll: $9.98M
+
+### Seattle (50 employees)
+- Average Salary: $156,200
+- Cost of Living Adjustment: 93%
+- Total Payroll: $7.81M
+
+### Boston (28 employees)
+- Average Salary: $152,400
+- Cost of Living Adjustment: 91%
+- Total Payroll: $4.27M
+
+---
+
+## Equity Compensation
+
+### Stock Option Overview
+- **Total Options Granted (2025)**: 2,450,000
+- **Average Grant per Employee**: 4,685 options
+- **Current Share Price**: $16.50
+- **Total Equity Value**: $40.4M
+- **Vesting Schedule**: 4-year with 1-year cliff
+
+### Options by Level
+- L1-L2: 1,000 - 5,000 options
+- L3: 5,000 - 15,000 options
+- L4-L5: 15,000 - 50,000 options
+- Managers: 20,000 - 100,000 options
+- Directors/VPs: 100,000 - 500,000 options
+- Executives: 500,000 - 2,500,000 options
+
+### New Hire Equity Grants (2025)
+- **Total New Hires**: 158
+- **Average Grant**: 8,500 options
+- **Total Options Granted**: 1,343,000
+- **Estimated Value**: $22.2M
+
+---
+
+## Bonus & Commission Structure
+
+### Annual Bonus Pool
+- **Total Bonus Budget**: $18.4M
+- **Average Bonus**: 12% of salary
+- **Bonus Eligible Employees**: 523 (100%)
+
+**Bonus by Performance**:
+- Exceptional: 25-35% of salary
+- Exceeds: 15-25% of salary
+- Meets: 10-15% of salary
+- Needs Improvement: 0-5% of salary
+
+### Sales Commission
+- **Total Commission Paid (2025 YTD)**: $16.4M
+- **Average Commission per AE**: $194,000
+- **Top Performer Commission**: $425,000
+- **Commission Structure**: 8-12% of ACV
+
+### Spot Bonuses (2025)
+- **Total Spot Bonuses**: $840,000
+- **Recipients**: 178 employees
+- **Average Spot Bonus**: $4,719
+- **Range**: $500 - $15,000
+
+---
+
+## Benefits Cost Analysis
+
+### Total Benefits Cost: $28.5M (20% of payroll)
+
+**Healthcare Benefits**: $15.2M
+- Medical Insurance: $11.4M
+- Dental Insurance: $1.8M
+- Vision Insurance: $0.6M
+- Mental Health: $1.4M
+
+**Retirement Benefits**: $8.55M
+- 401(k) Match: $8.55M (6% of salary)
+
+**Other Benefits**: $4.75M
+- Life Insurance: $1.2M
+- Disability Insurance: $0.8M
+- Commuter Benefits: $0.6M
+- Professional Development: $1.5M
+- Wellness Programs: $0.4M
+- Employee Assistance: $0.25M
+
+---
+
+## Compensation Trends & Analysis
+
+### Year-over-Year Comparison
+
+| Metric | 2024 | 2025 | Change |
+|--------|------|------|--------|
+| Average Salary | $143,800 | $156,400 | +8.8% |
+| Median Salary | $128,000 | $138,000 | +7.8% |
+| Total Payroll | $67.5M | $142.5M | +111% |
+| Headcount | 365 | 523 | +43% |
+| Avg Raise % | 7.2% | 8.7% | +1.5pp |
+
+### Market Competitiveness
+
+**Salary Percentiles vs Market**:
+- Engineering: 65th percentile
+- Sales: 72nd percentile
+- Product: 68th percentile
+- Marketing: 55th percentile
+- All Other: 60th percentile
+
+**Retention Impact**:
+- Competitive Pay (60th+ percentile): 93% retention
+- Below Market (<50th percentile): 78% retention
+- Above Market (75th+ percentile): 96% retention
+
+---
+
+## Pay Equity Analysis
+
+### Gender Pay Equity
+- Female Average Salary: $154,200
+- Male Average Salary: $157,800
+- Pay Gap: 2.3% (adjusted for level/role)
+- Target: <3% (✓ Achieved)
+
+### Diversity Pay Equity
+- Underrepresented Minorities: $153,600
+- Non-minorities: $157,200
+- Pay Gap: 2.3%
+- Target: <3% (✓ Achieved)
+
+### Actions Taken
+- Annual pay equity reviews
+- Bias-free salary bands
+- Standardized promotion criteria
+- Regular market benchmarking
+
+---
+
+## 2026 Compensation Planning
+
+### Projected Changes
+- **Headcount Growth**: 575 employees (+10%)
+- **Average Raise Budget**: 7.5%
+- **Total Payroll Projection**: $165M (+15.8%)
+- **Equity Pool**: 3,000,000 options
+
+### Strategic Focus
+1. Maintain market competitiveness (60th-70th percentile)
+2. Reduce pay gaps to <2%
+3. Increase performance-based differentiation
+4. Expand benefits portfolio
+5. Enhance equity participation
+
+---
+
+**Report Compiled**: November 26, 2025
+**Next Update**: January 15, 2026
+**Approved By**: Jennifer Liu (CFO), Laura Mitchell (CPO)
+**Distribution**: Executive Team Only

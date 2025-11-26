@@ -19,6 +19,9 @@ try:
 except ImportError:
     raise ImportError("chromadb not installed. Install with: pip install chromadb")
 
+# Import shared client
+from chroma_client import get_chroma_client
+
 # Import sentence-transformers
 try:
     from sentence_transformers import SentenceTransformer
@@ -67,14 +70,8 @@ class ChromaDBSetup:
         # Create chroma_db directory if it doesn't exist
         self.chroma_db_path.mkdir(parents=True, exist_ok=True)
         
-        # Initialize ChromaDB client with persistent storage
-        self.client = chromadb.PersistentClient(
-            path=str(self.chroma_db_path),
-            settings=Settings(
-                anonymized_telemetry=False,
-                allow_reset=True
-            )
-        )
+        # Get shared ChromaDB client
+        self.client = get_chroma_client(str(self.chroma_db_path))
         logger.info(f"ChromaDB client initialized with persistent storage at: {self.chroma_db_path}")
         
         # Initialize embedding model

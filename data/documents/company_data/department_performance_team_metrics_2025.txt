@@ -1,0 +1,729 @@
+# TechCorp Department Performance & Team Metrics 2025
+
+**Report Period**: January 1 - September 30, 2025
+**Prepared by**: Business Operations & Analytics
+**Report Date**: October 1, 2025
+**Classification**: Confidential - Internal Use
+
+---
+
+## Executive Summary
+
+TechCorp's 10 departments collectively delivered $204.5M in revenue with 94% employee retention and 8.4/10 satisfaction scores. Engineering leads productivity with 127 features shipped, Sales achieved 28% win rates with $680M pipeline, and Customer Success maintained industry-leading 118% net retention. All departments met or exceeded their quarterly OKRs.
+
+**Department Highlights**:
+- Highest Revenue: Sales ($204.5M direct)
+- Highest ROI: Product (2,204%)
+- Highest Productivity: Engineering (127 features)
+- Highest Satisfaction: Data Science (9.1/10)
+- Highest Retention: Customer Success (98%)
+
+---
+
+## Engineering Department
+
+**Leadership**: Michael Torres (SVP Engineering)
+**Headcount**: 150 engineers
+**Budget**: $56.1M
+**Revenue Impact**: $198M (platform value)
+
+### Team Structure
+
+**Backend Engineering** (55 engineers)
+- Tech Lead: Alex Kumar (Staff Engineer)
+- Teams: Platform, API, Infrastructure
+- Headcount: 55
+- Key Focus: Scalability, performance
+
+**Frontend Engineering** (42 engineers)
+- Tech Lead: Daniel Kim (Senior Engineer)
+- Teams: Web, Mobile, Design System
+- Headcount: 42
+- Key Focus: User experience, speed
+
+**Data Engineering** (28 engineers)
+- Tech Lead: Rachel Moore (Principal Engineer)
+- Teams: Pipelines, Analytics, ML Ops
+- Headcount: 28
+- Key Focus: Data infrastructure
+
+**DevOps/SRE** (15 engineers)
+- Tech Lead: James Wilson (Staff Engineer)
+- Teams: Infrastructure, Security, Monitoring
+- Headcount: 15
+- Key Focus: Reliability, automation
+
+**QA/Test** (10 engineers)
+- Lead: Maria Garcia (QA Manager)
+- Teams: Automation, Manual Testing
+- Headcount: 10
+- Key Focus: Quality, test coverage
+
+### Performance Metrics
+
+**Output**:
+- Features Shipped: 127 major features
+- Code Written: 1.24M lines
+- Bug Fixes: 1,647
+- Pull Requests: 3,247 merged
+- Code Reviews: 8,945
+
+**Quality**:
+- Test Coverage: 87%
+- Bug Rate: 0.8 bugs/1000 LOC
+- Production Incidents: 12 (P0/P1)
+- Mean Time to Resolution: 2.3 hours
+- Code Review Score: 8.4/10
+
+**Velocity**:
+- Story Points: 3,456 completed
+- Sprint Velocity: 89 points/sprint
+- Features per Engineer: 2.8/quarter
+- Deployment Frequency: 4.2/week
+
+**Platform Performance**:
+- Uptime: 99.95%
+- Page Load Time: 1.3s (was 2.1s)
+- API Response: 117ms (was 180ms)
+- System Capacity: 4M users (was 1M)
+
+### Team Performance by Group
+
+**Backend Team** (55 engineers)
+- Features: 67 (53% of total)
+- Code: 680K lines
+- Performance: +40% speed improvements
+- Key Wins: Multi-cloud, AI engine, real-time analytics
+- Productivity: 3.2 features/engineer
+
+**Frontend Team** (42 engineers)
+- Features: 45 (35% of total)
+- Code: 420K lines
+- UX Score: 8.7/10
+- Key Wins: Self-service portal, mobile redesign
+- Productivity: 3.4 features/engineer
+
+**Data Engineering** (28 engineers)
+- Pipelines: 23 new pipelines
+- Data Volume: 12 TB/day processed
+- ML Models: 12 deployed
+- Key Wins: Real-time analytics, recommendation engine
+- Productivity: 2.1 projects/engineer
+
+**DevOps** (15 engineers)
+- Deployments: 327 production deploys
+- Downtime: 0.05%
+- Automation: 67% tasks automated
+- Cost Savings: $3.6M cloud optimization
+- Productivity: 4.6 improvements/engineer
+
+### Top Contributors
+
+1. **Alex Kumar** (Staff Engineer, Backend)
+   - Code: 42,340 lines, 287 PRs
+   - Impact: Platform redesign (+300% capacity)
+   - Recognition: Technical Excellence Award
+
+2. **David Zhang** (Principal Engineer, AI/ML)
+   - Code: 38,620 lines, 234 PRs
+   - Impact: AI features ($12.4M ARR)
+   - Patents: 3 filed
+
+3. **James Wilson** (Staff Engineer, DevOps)
+   - Improvements: 69 major optimizations
+   - Impact: -40% latency, $2.4M savings
+   - Uptime: 99.95%
+
+### OKR Achievement
+
+**Q1-Q3 OKRs**: 87% average completion
+
+1. **Ship AI Product**: 100% ✅
+   - 8 features shipped
+   - $96.2M ARR
+   - 247 customers
+
+2. **Improve Performance**: 95% ✅
+   - Latency: -40% (target -30%)
+   - Uptime: 99.95% (target 99.9%)
+
+3. **Scale Platform**: 100% ✅
+   - Capacity: 4M users (target 3M)
+   - Multi-cloud: 3 providers
+
+4. **Quality Improvement**: 78%
+   - Test Coverage: 87% (target 90%)
+   - Bug Rate: 0.8 (target 0.5)
+
+### Team Health
+
+**Satisfaction**: 8.6/10
+**Retention**: 95%
+**Attrition**: 8 engineers (5%)
+**Hiring**: 23 new engineers
+**Promotion Rate**: 18%
+
+**Challenges**:
+- Technical debt: 2,340 hours estimated
+- On-call fatigue: 23% report burnout
+- Meeting load: 23% of time
+
+---
+
+## Sales Department
+
+**Leadership**: Sarah Chen (VP Sales)
+**Headcount**: 80 reps
+**Budget**: $37.2M
+**Revenue**: $204.5M
+
+### Team Structure
+
+**Enterprise Sales** (18 AEs)
+- Director: Marcus Rodriguez
+- Focus: $500K+ deals
+- Quota: $2M/rep
+- Team Size: 18
+
+**Mid-Market Sales** (34 AEs)
+- Director: Jessica Martinez
+- Focus: $100K-$500K deals
+- Quota: $800K/rep
+- Team Size: 34
+
+**SMB Sales** (16 AEs)
+- Manager: Robert Lee
+- Focus: <$100K deals
+- Quota: $400K/rep
+- Team Size: 16
+
+**Sales Development** (12 SDRs)
+- Manager: Amanda Chen
+- Focus: Lead qualification
+- Quota: 40 SQLs/month
+- Team Size: 12
+
+### Performance Metrics
+
+**Revenue**:
+- Total Closed: $204.5M
+- Q1: $62.8M
+- Q2: $73.2M
+- Q3: $68.5M
+- Attainment: 74% (on track for $275M)
+
+**Deal Metrics**:
+- Total Deals: 951
+- Average Deal Size: $215K
+- Win Rate: 28%
+- Sales Cycle: 67 days
+- Pipeline: $680M
+
+**Efficiency**:
+- CAC: $18,400
+- LTV: $890K
+- LTV/CAC: 48:1
+- Payback: 11 months
+- ROI: 450%
+
+### Team Performance by Segment
+
+**Enterprise** (18 reps)
+- Revenue: $89M (43%)
+- Deals: 127
+- Avg Deal: $701K
+- Win Rate: 22%
+- Cycle: 127 days
+- Top Performer: Marcus Rodriguez ($12.4M)
+
+**Mid-Market** (34 reps)
+- Revenue: $91M (45%)
+- Deals: 473
+- Avg Deal: $192K
+- Win Rate: 31%
+- Cycle: 62 days
+- Top Performer: Jessica Martinez ($5.2M)
+
+**SMB** (16 reps)
+- Revenue: $24.5M (12%)
+- Deals: 351
+- Avg Deal: $70K
+- Win Rate: 34%
+- Cycle: 34 days
+- Top Performer: David Park ($2.1M)
+
+### Quota Attainment
+
+**Distribution**:
+- >100% (Exceeds): 18 reps (22%)
+- 80-100% (On Track): 42 reps (53%)
+- 50-80% (At Risk): 16 reps (20%)
+- <50% (Behind): 4 reps (5%)
+
+**Top Performers**:
+1. Marcus Rodriguez: 155% ($12.4M)
+2. Sarah Chen (VP): 142% ($18.2M)
+3. Brian Cooper: 136% ($6.8M)
+4. Jessica Martinez: 130% ($5.2M)
+5. Robert Taylor: 128% ($4.6M)
+
+### Pipeline Health
+
+**Total Pipeline**: $680M
+**Coverage**: 2.5x quota
+**Stages**:
+- Prospecting: $272M (40%)
+- Qualification: $204M (30%)
+- Proposal: $136M (20%)
+- Negotiation: $68M (10%)
+
+**Conversion Rates**:
+- Prospect → Qualified: 45%
+- Qualified → Proposal: 62%
+- Proposal → Negotiation: 58%
+- Negotiation → Close: 74%
+
+### OKR Achievement
+
+**Q1-Q3 OKRs**: 92% average
+
+1. **Revenue Target**: 74% ✅ (on track)
+   - Q1-Q3: $204.5M
+   - Full Year: $275M projected
+
+2. **Enterprise Growth**: 100% ✅
+   - Deals: 127 (target 100)
+   - Revenue: $89M (target $75M)
+
+3. **Win Rate**: 93%
+   - Achieved: 28% (target 30%)
+
+4. **Sales Cycle**: 89%
+   - Achieved: 67 days (target 60 days)
+
+### Team Health
+
+**Satisfaction**: 8.2/10
+**Retention**: 92%
+**Attrition**: 7 reps (9%)
+**Hiring**: 12 new reps
+**Promotion**: 6 to senior roles
+
+---
+
+## Customer Success Department
+
+**Leadership**: Nicole Davis (VP Customer Success)
+**Headcount**: 45 CSMs
+**Budget**: $11.4M
+**Revenue Impact**: $24.6M expansion
+
+### Team Structure
+
+**Enterprise CSMs** (12 CSMs)
+- Director: Christopher Lee
+- Accounts: 127 (10-12 per CSM)
+- Focus: Strategic relationships
+- Team Size: 12
+
+**Mid-Market CSMs** (18 CSMs)
+- Manager: Michelle Garcia
+- Accounts: 432 (24 per CSM)
+- Focus: Expansion, retention
+- Team Size: 18
+
+**SMB CSMs** (10 CSMs)
+- Manager: Tom Anderson
+- Accounts: 171 (17 per CSM)
+- Focus: Adoption, support
+- Team Size: 10
+
+**Support Team** (5 engineers)
+- Manager: Lisa Kim
+- Focus: Technical support
+- Team Size: 5
+
+### Performance Metrics
+
+**Retention**:
+- Gross Retention: 96.5%
+- Net Retention: 118%
+- Churn: 3.5% (26 customers)
+- Churn Impact: $7.2M ARR
+
+**Expansion**:
+- Expansion Revenue: $24.6M
+- Upsells: 167 ($18.2M)
+- Cross-sells: 89 ($6.4M)
+- Expansion Rate: 23%
+
+**Customer Health**:
+- Healthy: 547 (75%)
+- At Risk: 127 (17%)
+- Churning: 56 (8%)
+- NPS: 64
+- CSAT: 94%
+
+**Support**:
+- Tickets: 8,541 resolved
+- First Response: 2.3 hours
+- Resolution Time: 8.7 hours
+- Satisfaction: 94%
+
+### Team Performance
+
+**Enterprise CSMs**:
+- Retention: 100%
+- Expansion: $18.4M
+- NPS: 78
+- Accounts: 127 (10.6 per CSM)
+- Top: Christopher Lee ($3.2M expansion)
+
+**Mid-Market CSMs**:
+- Retention: 97%
+- Expansion: $5.6M
+- NPS: 62
+- Accounts: 432 (24 per CSM)
+- Top: Michelle Garcia ($2.4M expansion)
+
+**SMB CSMs**:
+- Retention: 92%
+- Expansion: $600K
+- NPS: 54
+- Accounts: 171 (17 per CSM)
+
+### Top Contributors
+
+1. **Nicole Davis** (VP)
+   - Accounts: 34 strategic
+   - Retention: 100%
+   - Expansion: $4.8M
+   - NPS: 82
+
+2. **Christopher Lee** (Enterprise CSM)
+   - Accounts: 18
+   - Retention: 100%
+   - Expansion: $3.2M
+   - At-Risk Saved: 6 ($2.4M)
+
+3. **Michelle Garcia** (CSM)
+   - Accounts: 28
+   - Retention: 98%
+   - Expansion: $2.4M
+
+### OKR Achievement
+
+**Q1-Q3 OKRs**: 94% average
+
+1. **Retention Target**: 97% ✅
+   - Achieved: 96.5% (target 95%)
+
+2. **Net Retention**: 100% ✅
+   - Achieved: 118% (target 115%)
+
+3. **NPS Target**: 107% ✅
+   - Achieved: 64 (target 60)
+
+4. **Expansion**: 100% ✅
+   - Achieved: $24.6M (target $24M)
+
+### Team Health
+
+**Satisfaction**: 8.8/10
+**Retention**: 98%
+**Attrition**: 1 CSM (2%)
+**Hiring**: 8 new CSMs
+**Promotion**: 4 to senior
+
+---
+
+## Product Management Department
+
+**Leadership**: Jennifer Wu (VP Product)
+**Headcount**: 25 PMs
+**Budget**: $8.2M
+**Revenue Impact**: $189M (product-attributed)
+
+### Team Structure
+
+**Platform PM** (8 PMs)
+- Director: Mark Johnson
+- Focus: Core platform, APIs
+- Products: 3 core products
+
+**AI/ML PM** (6 PMs)
+- Director: Emma Thompson
+- Focus: AI features
+- Products: AI product line
+
+**Enterprise PM** (5 PMs)
+- Manager: Amanda Foster
+- Focus: Enterprise features
+- Products: Enterprise suite
+
+**Growth PM** (6 PMs)
+- Manager: Kevin Zhang
+- Focus: PLG, onboarding
+- Products: Self-service
+
+### Performance Metrics
+
+**Product Launches**: 8 major releases
+**Features Shipped**: 127
+**Revenue Impact**: $189M
+
+**Product Metrics**:
+- Active Users: 2.4M
+- DAU/MAU: 42%
+- Time to Value: 4.4 days (was 8)
+- Feature Adoption: 67% within 30 days
+- Product NPS: 64
+
+**Research**:
+- User Interviews: 340
+- Surveys: 12 (4,200 responses)
+- Beta Tests: 6 (180 participants)
+- Insights: 127 documented
+
+### Team Performance
+
+**Platform PM Team**:
+- Features: 56 (44%)
+- Revenue: $73.6M (Cloud)
+- Key Wins: Multi-cloud, API v3
+- Adoption: 89%
+
+**AI/ML PM Team**:
+- Features: 38 (30%)
+- Revenue: $96.2M (AI)
+- Key Wins: Recommendations, analytics
+- Adoption: 67%
+
+**Enterprise PM Team**:
+- Features: 21 (17%)
+- Revenue: $26.5M
+- Key Wins: SSO, RBAC, audit logs
+- Adoption: 78%
+
+**Growth PM Team**:
+- Features: 12 (9%)
+- Revenue: $4.8M (self-serve)
+- Key Wins: Onboarding, self-service
+- Impact: -40% support tickets
+
+### Top Contributors
+
+1. **Jennifer Wu** (VP)
+   - Strategy: AI product line
+   - Revenue: $96.2M
+   - Market: 3 new segments
+
+2. **Emma Thompson** (PM)
+   - Feature: Self-service
+   - Revenue: $4.8M
+   - Impact: -40% tickets
+
+3. **Amanda Foster** (PM)
+   - Feature: Analytics
+   - Revenue: $3.8M
+   - NPS: +12 points
+
+### OKR Achievement
+
+**Q1-Q3 OKRs**: 89% average
+
+1. **Launch AI Products**: 100% ✅
+   - 8 features shipped
+   - $96.2M revenue
+
+2. **Improve Onboarding**: 100% ✅
+   - Time to value: -45%
+   - Adoption: +28%
+
+3. **Enterprise Features**: 88%
+   - 21 features (target 24)
+   - Revenue: $26.5M
+
+### Team Health
+
+**Satisfaction**: 8.7/10
+**Retention**: 96%
+**Attrition**: 1 PM (4%)
+**Hiring**: 5 new PMs
+
+---
+
+## Marketing Department
+
+**Leadership**: Lisa Anderson (VP Marketing)
+**Headcount**: 58
+**Budget**: $15.8M
+**Pipeline**: $142M influenced
+
+### Team Structure
+
+**Demand Generation** (18)
+- Director: Sarah Kim
+- Focus: Pipeline, leads
+
+**Content Marketing** (12)
+- Manager: Tom Richards
+- Focus: SEO, thought leadership
+
+**Product Marketing** (10)
+- Manager: Emily Chen
+- Focus: Positioning, launches
+
+**Brand/Communications** (8)
+- Manager: David Lee
+- Focus: Brand, PR
+
+**Marketing Ops** (10)
+- Manager: Rachel Park
+- Focus: Tech stack, analytics
+
+### Performance Metrics
+
+**Pipeline**:
+- Influenced: $142M (70%)
+- MQLs: 8,940
+- SQLs: 3,127
+- Conversion: 35%
+
+**Channels**:
+- Organic: $34M pipeline (24%)
+- Paid: $28M (20%)
+- Events: $24M (17%)
+- Email: $22M (15%)
+- Social: $18M (13%)
+- Partner: $16M (11%)
+
+**Content**:
+- Blog Posts: 89
+- Whitepapers: 12
+- Webinars: 24
+- Case Studies: 18
+
+**Brand**:
+- Website: 2.4M visits (+45%)
+- Leads: 8,940 (+28%)
+- Social: 87K followers (+67%)
+- Press: 127 mentions
+
+### Team Performance
+
+**Demand Gen**:
+- Pipeline: $56M
+- MQLs: 5,364
+- Cost per MQL: $124
+- ROI: 680%
+
+**Content**:
+- Pipeline: $34M
+- Organic Traffic: 1.4M
+- Content Pieces: 89
+- ROI: 810%
+
+**Product Marketing**:
+- Launches: 8
+- Revenue: $189M
+- Win Rate: +6%
+
+**Brand**:
+- Awareness: +45%
+- Consideration: +34%
+- Press Value: $4.2M
+
+### OKR Achievement
+
+**Q1-Q3 OKRs**: 84% average
+
+1. **Pipeline Target**: 95% ✅
+   - $142M (target $150M)
+
+2. **Lead Generation**: 100% ✅
+   - 8,940 MQLs (target 8,400)
+
+3. **Brand Awareness**: 100% ✅
+   - +45% traffic (target +40%)
+
+### Team Health
+
+**Satisfaction**: 8.3/10
+**Retention**: 93%
+**Attrition**: 4 (7%)
+
+---
+
+## Data Science Department
+
+**Leadership**: Kevin Brown (Director Data Science)
+**Headcount**: 22
+**Budget**: $7.2M
+**Revenue Impact**: $67M
+
+### Performance Metrics
+
+**Models Deployed**: 12
+**Revenue Impact**: $67M
+**Cost Savings**: $12.4M
+
+**Top Models**:
+1. Recommendations: $12.4M revenue
+2. Churn Prediction: $8.4M saved
+3. Dynamic Pricing: $24.5M revenue
+4. Lead Scoring: +32% conversion
+
+### OKR Achievement: 91%
+
+### Team Health
+
+**Satisfaction**: 9.1/10 (highest)
+**Retention**: 96%
+
+---
+
+## Support Departments
+
+### IT & Operations (35)
+**Budget**: $9.8M
+**Uptime**: 99.95%
+**Savings**: $2.8M
+
+### Finance (28)
+**Budget**: $6.4M
+**Accuracy**: 100%
+**Collections**: 98%
+
+### HR (38)
+**Budget**: $8.9M
+**Hiring**: 145
+**Retention**: 94%
+**Satisfaction**: 8.4/10
+
+### Executive (12)
+**Budget**: $10.2M
+**Strategic Leadership**
+
+---
+
+## Cross-Department Comparison
+
+| Metric | Engineering | Sales | CS | Product | Marketing |
+|--------|-------------|-------|-----|---------|-----------|
+| Headcount | 150 | 80 | 45 | 25 | 58 |
+| Budget | $56.1M | $37.2M | $11.4M | $8.2M | $15.8M |
+| Revenue | $198M* | $204.5M | $24.6M | $189M** | $142M*** |
+| ROI | 253% | 450% | 116% | 2,204% | 799% |
+| Satisfaction | 8.6 | 8.2 | 8.8 | 8.7 | 8.3 |
+| Retention | 95% | 92% | 98% | 96% | 93% |
+| OKR | 87% | 92% | 94% | 89% | 84% |
+
+*Platform value **Product-attributed ***Pipeline influenced
+
+---
+
+**Report Compiled**: October 1, 2025
+**Next Update**: January 15, 2026
+**Prepared By**: Operations Analytics
+**Approved By**: David Park (COO)

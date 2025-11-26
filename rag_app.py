@@ -84,15 +84,13 @@ class RAGChatbotApp:
     
     def upload_documents(
         self,
-        files: List[gr.File],
-        progress=gr.Progress()
+        files: List[gr.File]
     ) -> Tuple[str, str]:
         """
         Process uploaded documents and add to vector database.
         
         Args:
             files: List of uploaded file objects from Gradio
-            progress: Gradio progress tracker
             
         Returns:
             Tuple of (status_message, updated_stats)
@@ -102,8 +100,6 @@ class RAGChatbotApp:
         
         try:
             from embeddings_and_chroma_setup import ChromaDBSetup
-            
-            progress(0, desc="Starting document upload...")
             
             processed_files = []
             failed_files = []
@@ -115,8 +111,7 @@ class RAGChatbotApp:
                     file_path = Path(file.name)
                     filename = file_path.name
                     
-                    progress((i + 1) / len(files), desc=f"Processing {filename}...")
-                    logger.info(f"Processing file: {filename}")
+                    logger.info(f"Processing file: {filename} ({i + 1}/{len(files)})")
                     
                     # Load and process file
                     chunks = self.ingestor.load_and_process_file(file.name)
@@ -135,7 +130,7 @@ class RAGChatbotApp:
             
             # Upsert chunks into ChromaDB
             if all_chunks:
-                progress(0.9, desc="Indexing documents in vector database...")
+                logger.info("Indexing documents in vector database...")
                 
                 chroma_setup = ChromaDBSetup(
                     chroma_db_path=CHROMA_DB_PATH,
@@ -394,7 +389,7 @@ Upload documents and ask questions. The chatbot will retrieve relevant informati
                         label="Select Files",
                         file_types=[".pdf", ".txt", ".docx"],
                         file_count="multiple",
-                        type="filepath"
+                        type="file"  # Changed from "filepath" for Gradio 3.50.2 compatibility
                     )
                     
                     upload_btn = gr.Button("Upload & Index 📥", variant="primary")

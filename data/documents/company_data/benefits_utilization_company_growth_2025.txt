@@ -1,0 +1,740 @@
+# TechCorp Benefits Utilization & Company Growth Report 2025
+
+**Report Period**: January 1 - September 30, 2025
+**Prepared by**: HR Operations & Benefits Team
+**Report Date**: October 1, 2025
+**Classification**: Confidential - Internal Use
+
+---
+
+## Executive Summary
+
+TechCorp invested $28.5M in employee benefits during Q1-Q3 2025, serving 523 employees and 847 total covered individuals. Healthcare remains the largest benefit expense at $15.2M (53%), with 401(k) matching at $8.55M (30%) and other benefits at $4.75M (17%). Employee satisfaction with benefits stands at 8.7/10, and benefits are cited as a top reason for joining in 67% of new hire surveys.
+
+**Key Metrics**:
+- Total Benefits Cost: $28.5M
+- Cost per Employee: $54,494
+- Participation Rate: 94%
+- Satisfaction: 8.7/10
+- Retention Impact: +12% vs industry
+
+---
+
+## Healthcare Benefits
+
+### Medical Insurance
+
+**Provider**: UnitedHealthcare
+**Coverage**: 3 plan options
+**Total Cost**: $15.2M (Q1-Q3)
+
+**Plan Options & Enrollment**:
+
+1. **PPO Premium Plan**
+   - Enrollment: 289 employees (55%)
+   - Monthly Premium: $1,850/employee
+   - Company Pays: 90% ($1,665)
+   - Employee Pays: 10% ($185)
+   - Deductible: $500 individual / $1,000 family
+   - Max Out-of-Pocket: $3,000 / $6,000
+   - Total Cost: $6.4M
+
+2. **PPO Standard Plan**
+   - Enrollment: 178 employees (34%)
+   - Monthly Premium: $1,450/employee
+   - Company Pays: 85% ($1,232)
+   - Employee Pays: 15% ($218)
+   - Deductible: $1,500 / $3,000
+   - Max Out-of-Pocket: $5,000 / $10,000
+   - Total Cost: $3.9M
+
+3. **HDHP with HSA**
+   - Enrollment: 56 employees (11%)
+   - Monthly Premium: $1,150/employee
+   - Company Pays: 80% ($920)
+   - Employee Pays: 20% ($230)
+   - Deductible: $3,000 / $6,000
+   - Max Out-of-Pocket: $6,000 / $12,000
+   - HSA Contribution: Company adds $1,500/year
+   - Total Cost: $4.9M (incl HSA funding)
+
+**Dependents Covered**: 324 (62% enrollment)
+- Spouse/Partner: 198
+- Children: 126
+
+**Utilization**:
+- Primary Care Visits: 1,847 visits
+- Specialist Visits: 1,124 visits
+- Emergency Room: 67 visits
+- Urgent Care: 234 visits
+- Hospitalizations: 23
+- Prescriptions: 3,456 filled
+
+**Claims**:
+- Total Claims: $12.8M
+- Average per Employee: $24,474
+- Highest Claims: 3 employees >$100K each
+
+**Cost Trends**:
+- 2024: $13.2M (for 478 employees)
+- 2025: $15.2M (for 523 employees)
+- Per Employee Change: -2.4%
+- Total Change: +15.2% (headcount growth)
+
+### Dental Insurance
+
+**Provider**: Delta Dental
+**Enrollment**: 487 employees (93%)
+**Total Cost**: $1.24M
+
+**Plan**:
+- Monthly Premium: $85/employee
+- Company Pays: 100%
+- Coverage: Preventive 100%, Basic 80%, Major 50%
+- Annual Max: $2,000
+
+**Utilization**:
+- Cleanings: 912 (2x/year)
+- Fillings: 234
+- Crowns: 45
+- Root Canals: 23
+- Orthodontics: 12
+
+**Claims**: $890K (72% of premiums)
+
+### Vision Insurance
+
+**Provider**: VSP
+**Enrollment**: 456 employees (87%)
+**Total Cost**: $456K
+
+**Plan**:
+- Monthly Premium: $20/employee
+- Company Pays: 100%
+- Coverage: Exam, frames/lenses every year
+
+**Utilization**:
+- Eye Exams: 389
+- Glasses: 267
+- Contacts: 122
+
+**Claims**: $378K (83% of premiums)
+
+### Mental Health & Wellness
+
+**Employee Assistance Program (EAP)**
+- Provider: ComPsych
+- Coverage: 8 sessions/year per employee
+- Cost: $156K
+- Utilization: 127 employees (24%)
+- Sessions: 456 total
+- Satisfaction: 9.2/10
+
+**Mental Health Coverage**
+- Included in medical plans
+- Therapy Visits: 1,124 (covered at 90%)
+- Psychiatry: 234 visits
+- Cost: $845K
+
+**Wellness Program**
+- Gym Reimbursement: $75/month
+- Participation: 312 employees (60%)
+- Cost: $210K
+- Meditation App (Headspace): $67K
+- On-site Yoga: $45K (2x/week)
+
+**Total Mental Health/Wellness**: $1.32M
+
+---
+
+## Retirement Benefits
+
+### 401(k) Plan
+
+**Provider**: Fidelity
+**Participation**: 487 employees (93%)
+**Total Company Match**: $8.55M
+
+**Match Structure**:
+- Company Matches: 100% up to 6% of salary
+- Vesting: Immediate (100%)
+- Average Employee Contribution: 8.2%
+- Average Company Match: 5.8%
+
+**Contributions (Q1-Q3)**:
+- Employee Contributions: $12.4M
+- Company Match: $8.55M
+- Total: $20.95M
+
+**By Salary Band**:
+- $50K-$100K: 6.4% avg contribution
+- $100K-$150K: 7.8% avg
+- $150K-$200K: 8.9% avg
+- $200K+: 10.2% avg
+
+**Asset Allocation**:
+- Target Date Funds: 45%
+- Index Funds: 32%
+- Company Stock: 12%
+- Individual Stocks: 8%
+- Bonds: 3%
+
+**Account Balances**:
+- Average Balance: $124,500
+- Median: $89,200
+- Top 10%: >$350K
+- Participation <1 year: $12,400 avg
+
+**Growth**:
+- 2024 Contributions: $6.2M match
+- 2025 Contributions: $8.55M match (projected $11.4M full year)
+- Growth: +38% (headcount + raises)
+
+---
+
+## Time Off Benefits
+
+### Paid Time Off (PTO)
+
+**Policy**: Unlimited PTO (trust-based)
+
+**Actual Usage (Q1-Q3)**:
+- Total Days Taken: 2,280 days
+- Average per Employee: 4.4 days (Q1-Q3)
+- Projected Annual: 5.9 days
+
+**By Quarter**:
+- Q1: 650 days (28%)
+- Q2: 520 days (23%)
+- Q3: 1,110 days (49% - summer vacation)
+
+**By Department**:
+- Marketing: 5.3 days avg (highest)
+- Engineering: 4.8 days
+- Product: 4.5 days
+- Sales: 3.9 days
+- Customer Success: 4.2 days
+- Executive: 3.0 days (lowest)
+
+**Cost**: $3.6M (lost productivity)
+
+**Utilization Concern**: 23% took <2 days
+- Initiative: Minimum 15 days/year policy for 2026
+
+### Holidays
+
+**Days**: 12 paid holidays
+**Cost**: $12M (productivity)
+
+**2025 Holidays**:
+- New Year's Day
+- MLK Day
+- Presidents Day
+- Memorial Day
+- Juneteenth
+- Independence Day
+- Labor Day
+- Thanksgiving (2 days)
+- Christmas (2 days)
+- New Year's Eve
+
+### Sick Leave
+
+**Policy**: Unlimited sick days
+
+**Usage**:
+- Total Days: 522 days
+- Average: 1.0 days per employee
+- Cost: $522K
+
+**Flu Season Impact**:
+- Q1: 287 days (55%)
+- Q2: 156 days (30%)
+- Q3: 79 days (15%)
+
+### Parental Leave
+
+**Policy**:
+- Primary Caregiver: 16 weeks paid
+- Secondary Caregiver: 6 weeks paid
+
+**Usage (Q1-Q3)**:
+- Employees: 16 (3%)
+- Primary: 12 (16 weeks each = 192 weeks)
+- Secondary: 4 (6 weeks each = 24 weeks)
+- Total Weeks: 216 weeks
+- Cost: $2.16M
+
+**Gender Distribution**:
+- Women (primary): 10
+- Men (primary): 2
+- Men (secondary): 4
+
+**Return Rate**: 94% (15 of 16 returned)
+
+---
+
+## Equity Compensation
+
+### Stock Options
+
+**Program**: Stock Option Plan
+**Outstanding**: 4.2M options
+**Granted Q1-Q3**: 2.45M options
+**Exercise Price**: $16.50
+
+**Grants by Level**:
+- IC (L1-L3): 2,000-8,000 options
+- Senior (L4-L5): 10,000-25,000 options
+- Staff (L6): 30,000-50,000 options
+- Principal (L7): 60,000-100,000 options
+- Director: 50,000-120,000 options
+- VP: 150,000-300,000 options
+- Executive: 400,000-800,000 options
+
+**Vesting**: 4-year vest, 1-year cliff, monthly thereafter
+
+**Value**:
+- Current Stock Price: $16.50
+- Total Value: $40.4M (2.45M options)
+- Vested Value: $18.6M
+
+**Participation**: 456 employees (87%)
+
+**New Hire Grants**: 145 employees
+**Refresh Grants**: 89 top performers
+**Promotion Grants**: 89 promoted employees
+
+### Restricted Stock Units (RSUs)
+
+**Program**: Executive RSU Plan
+**Participants**: 34 directors and above
+**Granted**: 180,000 RSUs
+**Value**: $2.97M
+
+**Vesting**: 4 years, quarterly
+
+---
+
+## Other Benefits
+
+### Professional Development
+
+**Budget**: $1.5M
+**Participants**: 523 (100%)
+**Details**: See Training & Development Report
+
+**Key Benefits**:
+- Conference Attendance: $280K
+- Online Learning: $229K
+- Certifications: $285K
+- Tuition Reimbursement: $105K
+- Books/Materials: $42K
+
+### Commuter Benefits
+
+**Program**: Pre-tax commuter benefits
+**Participants**: 234 employees (45%)
+**Monthly Allowance**: Up to $300
+**Cost**: $631K
+
+**Usage**:
+- Public Transit: 145 employees
+- Parking: 67 employees
+- Company Shuttle: 22 employees
+
+### Life Insurance
+
+**Provider**: MetLife
+**Coverage**: 2x annual salary (company-paid)
+**Additional**: Up to 5x salary (employee-paid)
+
+**Cost**: $420K
+**Enrollment**: 523 (100% basic), 178 (34% additional)
+
+**Claims**: 0 (Q1-Q3)
+
+### Disability Insurance
+
+**Short-Term Disability**:
+- Provider: Unum
+- Coverage: 66% salary up to 6 months
+- Cost: $156K
+- Claims: 8 employees (avg 6 weeks each)
+
+**Long-Term Disability**:
+- Coverage: 60% salary after 6 months
+- Cost: $234K
+- Claims: 2 employees (ongoing)
+
+### Home Office Stipend
+
+**Allowance**: $1,500 one-time + $100/month
+**Participants**: 312 remote employees (60%)
+
+**One-time Setup**: $468K
+**Monthly**: $281K
+**Total**: $749K
+
+**Usage**:
+- Desk/Chair: 87%
+- Monitor: 92%
+- Keyboard/Mouse: 78%
+- Lighting: 45%
+- Noise-canceling Headphones: 67%
+
+### Phone/Internet
+
+**Allowance**: $100/month
+**Participants**: 523 (100%)
+**Cost**: $471K
+
+### Meals & Snacks
+
+**Office Meals** (3 offices):
+- Breakfast: Daily
+- Lunch: Daily
+- Dinner: Available after 6 PM
+- Snacks: Unlimited
+
+**Cost**: $1.24M
+
+**Usage**:
+- SF Office: $680K (largest office)
+- NY Office: $420K
+- Austin Office: $140K
+
+**Per Employee**: $2,371 (9 months)
+
+### Wellness Perks
+
+**Standing Desks**: All employees
+**Ergonomic Assessments**: Free
+**On-site Massage**: 2x/month
+**Flu Shots**: Free (all employees)
+
+**Cost**: $234K
+
+---
+
+## Benefits Satisfaction & Engagement
+
+### Overall Satisfaction
+
+**Benefits Satisfaction**: 8.7/10
+
+**By Benefit**:
+- Health Insurance: 8.9/10
+- 401(k) Match: 9.2/10
+- Unlimited PTO: 8.1/10
+- Parental Leave: 9.4/10
+- Stock Options: 8.6/10
+- Professional Development: 8.8/10
+- Remote Work Flexibility: 9.1/10
+- Meals/Snacks: 7.8/10
+
+### Utilization Rates
+
+**High Utilization (>85%)**:
+- Health Insurance: 93%
+- 401(k): 93%
+- Dental: 93%
+- Vision: 87%
+- Life Insurance: 100%
+
+**Medium Utilization (50-85%)**:
+- Gym Reimbursement: 60%
+- Home Office: 60%
+- Commuter: 45%
+
+**Low Utilization (<50%)**:
+- EAP: 24%
+- Additional Life: 34%
+
+### Impact on Recruitment
+
+**New Hire Survey**:
+- Benefits as Top 3 Reason: 67%
+- Specific Benefits Cited:
+  * Unlimited PTO: 78%
+  * 401(k) Match: 67%
+  * Equity: 89%
+  * Parental Leave: 45%
+  * Remote Flexibility: 72%
+
+### Impact on Retention
+
+**Retention Analysis**:
+- With Full Benefits: 96% retention
+- Without Full Benefits: 84% retention
+- Impact: +12% retention
+
+**Exit Interview Data**:
+- Left for Better Benefits: 2 of 34 (6%)
+
+---
+
+## Company Growth Metrics
+
+### Headcount Growth
+
+**Historical Headcount**:
+- Q1 2024: 412 employees
+- Q2 2024: 441 employees
+- Q3 2024: 478 employees
+- Q4 2024: 498 employees
+- Q1 2025: 478 employees
+- Q2 2025: 492 employees
+- Q3 2025: 523 employees
+
+**Growth**:
+- YoY (Q3): +9.4% (478 → 523)
+- 2025 Total Hires: 145
+- 2025 Attrition: 34 (6.5%)
+- Net Growth: +111 employees
+
+### Hiring by Department (2025)
+
+| Department | Q1 Hires | Q2 Hires | Q3 Hires | Total |
+|------------|----------|----------|----------|-------|
+| Engineering | 8 | 9 | 6 | 23 |
+| Sales | 4 | 5 | 3 | 12 |
+| Product | 2 | 2 | 1 | 5 |
+| Marketing | 3 | 2 | 2 | 7 |
+| Customer Success | 3 | 3 | 2 | 8 |
+| Data Science | 2 | 1 | 1 | 4 |
+| IT/Ops | 2 | 3 | 1 | 6 |
+| Finance | 1 | 2 | 1 | 4 |
+| HR | 2 | 3 | 2 | 7 |
+| Executive | 1 | 0 | 0 | 1 |
+
+**Total**: 145 new hires
+
+### Time to Hire
+
+**Average**: 32 days
+
+**By Department**:
+- Engineering: 42 days (technical vetting)
+- Sales: 28 days
+- Product: 38 days
+- Marketing: 24 days
+- Customer Success: 26 days
+- Data Science: 45 days (specialized)
+
+**By Level**:
+- IC: 28 days
+- Senior: 35 days
+- Staff/Principal: 48 days
+- Director: 52 days
+- VP: 67 days
+
+### Offer Acceptance Rate
+
+**Overall**: 78%
+
+**By Department**:
+- Engineering: 72% (competitive market)
+- Sales: 84%
+- Product: 75%
+- Data Science: 68% (highly competitive)
+
+**Reasons for Decline**:
+- Compensation: 45%
+- Location: 23%
+- Company Stage: 18%
+- Role Fit: 14%
+
+### Diversity Hiring
+
+**Overall Company Diversity**:
+- Women: 38%
+- Underrepresented Minorities: 27%
+
+**2025 Hiring Diversity**:
+- Women Hired: 62 of 145 (43%)
+- URM Hired: 45 of 145 (31%)
+
+**Progress**: Improving diversity by +5% women, +4% URM
+
+### Retention & Attrition
+
+**Retention**: 94%
+**Attrition**: 34 employees (6.5%)
+
+**Attrition by Reason**:
+- Voluntary: 28 (82%)
+  * Better Opportunity: 12
+  * Relocation: 6
+  * Career Change: 5
+  * Compensation: 3
+  * Work-Life Balance: 2
+- Involuntary: 6 (18%)
+  * Performance: 6
+
+**Attrition by Tenure**:
+- <1 year: 12 (35%)
+- 1-2 years: 8 (24%)
+- 2-3 years: 7 (21%)
+- 3+ years: 7 (21%)
+
+**Attrition by Performance**:
+- Top Performers: 2 (6%)
+- Solid Performers: 6 (18%)
+- Average: 20 (59%)
+- Low Performers: 6 (18%)
+
+**Retention by Department**:
+- Customer Success: 98%
+- Engineering: 95%
+- Product: 96%
+- Data Science: 96%
+- Marketing: 93%
+- Sales: 92%
+
+### Promotions
+
+**Total Promotions**: 89 (17% of company)
+
+**By Level**:
+- IC → Senior: 45
+- Senior → Staff: 23
+- Staff → Principal: 12
+- Manager → Director: 6
+- Director → VP: 3
+
+**Promotion Rate by Performance**:
+- Exceptional: 62%
+- Exceeds: 32%
+- Meets: 8%
+
+**Time to Promotion**: 2.3 years average
+
+---
+
+## Organizational Health
+
+### Employee Engagement
+
+**Engagement Score**: 8.4/10
+
+**Components**:
+- Job Satisfaction: 8.6/10
+- Manager Effectiveness: 8.2/10
+- Career Growth: 7.9/10
+- Work-Life Balance: 8.7/10
+- Benefits: 8.7/10
+- Culture: 8.8/10
+
+**eNPS**: 67 (excellent)
+
+### Performance Distribution
+
+**Overall Ratings**:
+- Exceptional (Top 10%): 52 employees
+- Exceeds Expectations: 131 employees (25%)
+- Meets Expectations: 314 employees (60%)
+- Needs Improvement: 26 employees (5%)
+
+**By Department** (Avg Rating):
+- Data Science: 8.4/10
+- Engineering: 8.2/10
+- Product: 8.3/10
+- Customer Success: 8.5/10
+- Sales: 8.0/10
+
+### Manager Effectiveness
+
+**Manager NPS**: 74
+
+**Ratings**:
+- Excellent Managers (9-10): 45 managers (51%)
+- Good Managers (7-8): 34 managers (38%)
+- Needs Improvement (<7): 10 managers (11%)
+
+---
+
+## Benefits Cost Analysis
+
+### Total Cost Breakdown
+
+**Q1-Q3 2025**: $28.5M
+
+**By Category**:
+1. Healthcare: $15.2M (53%)
+   - Medical: $13.2M
+   - Dental: $1.24M
+   - Vision: $456K
+   - Mental Health/Wellness: $1.32M
+
+2. Retirement: $8.55M (30%)
+   - 401(k) Match: $8.55M
+
+3. Equity: $2.97M (10%)
+   - Stock Options: $2.97M (expense recognition)
+
+4. Other: $1.78M (7%)
+   - Life/Disability: $810K
+   - Home Office: $749K
+   - Phone/Internet: $471K
+   - Wellness: $234K
+
+**Cost per Employee**: $54,494
+
+**As % of Salary**: 38.2%
+
+### Benchmarking
+
+**Industry Average**: 35% of salary
+**TechCorp**: 38.2%
+**Difference**: +3.2% (more generous)
+
+**Competitive Position**: 75th percentile
+
+---
+
+## 2026 Benefits Strategy
+
+### Planned Enhancements
+
+1. **Mental Health Expansion**: $500K
+   - Increase EAP sessions: 8 → 12
+   - Add meditation/mindfulness programs
+   - Mental health days: 4/year
+
+2. **Family Benefits**: $350K
+   - Increase parental leave: 16 → 20 weeks
+   - Adoption assistance: $10K
+   - Fertility benefits: $15K
+
+3. **Financial Wellness**: $200K
+   - Student loan assistance: $200/month
+   - Financial planning: Free for all
+
+4. **Learning Stipend**: $650K
+   - Increase to $2,500/employee
+
+5. **Sabbatical Program**: $400K
+   - 4 weeks paid after 5 years
+
+**Total New Investment**: $2.1M
+**2026 Budget**: $40.2M (+41%)
+
+---
+
+## Recommendations
+
+1. **Increase Benefits Budget**: 41% to $40.2M
+2. **Enhance Mental Health**: Expand EAP, add resources
+3. **Improve PTO Utilization**: Enforce 15-day minimum
+4. **Family Support**: Extend parental leave to 20 weeks
+5. **Financial Wellness**: Add student loan, financial planning
+6. **Sabbatical**: New benefit after 5 years
+7. **Diversity**: Focus on URM hiring (+10% target)
+
+---
+
+**Report Compiled**: October 1, 2025
+**Next Update**: January 15, 2026
+**Prepared By**: HR Operations Team
+**Approved By**: Laura Mitchell (CPO), Emily Rodriguez (CFO)

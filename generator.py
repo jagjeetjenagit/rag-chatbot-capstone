@@ -15,12 +15,22 @@ from typing import List, Dict, Any, Optional
 import json
 import re
 
-# Configure logging
+# Configure logging first
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+# Import API configuration
+try:
+    from config import LLM_PROVIDER, is_api_configured, get_llm_config
+    from llm_api import call_llm
+    CONFIG_AVAILABLE = True
+except ImportError:
+    logger.warning("config.py or llm_api.py not found. Using fallback mode only.")
+    CONFIG_AVAILABLE = False
+    LLM_PROVIDER = "fallback"
 
 
 # ============================================================================
@@ -419,8 +429,27 @@ Content:
     
     logger.debug(f"Prompt length: {len(full_prompt)} characters")
     
-    # Try to call LLM
-    llm_response = call_llm_api(full_prompt, backend=backend, max_tokens=max_tokens)
+    # Try to call LLM using new config-based API
+    llm_response = None
+    if CONFIG_AVAILABLE:
+        try:
+            # Use the provider from config or the specified backend
+            provider = backend if backend != "auto" else LLM_PROVIDER
+            llm_response = call_llm(
+                prompt=full_prompt,
+                provider=provider,
+                config={
+                    'max_tokens': max_tokens,
+                    'temperature': 0.7
+                }
+            )
+            if llm_response:
+                logger.info(f"Successfully got response from LLM (provider: {provider})")
+        except Exception as e:
+            logger.error(f"Error calling LLM via llm_api: {e}")
+    else:
+        # Fallback to old call_llm_api if config not available
+        llm_response = call_llm_api(full_prompt, backend=backend, max_tokens=max_tokens)
     
     if llm_response:
         # Parse LLM response

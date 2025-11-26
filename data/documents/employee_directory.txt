@@ -1,0 +1,412 @@
+# TechCorp Employee Directory 2025
+
+## Company Overview
+TechCorp is a leading technology solutions provider specializing in cloud computing, artificial intelligence, and enterprise software development. Founded in 2010, the company has grown to over 500 employees across 5 office locations.
+
+**Headquarters**: San Francisco, CA
+**Additional Offices**: New York, Austin, Seattle, Boston
+**Total Employees**: 523
+**Annual Revenue**: $250 Million
+
+---
+
+## Executive Leadership Team
+
+### Sarah Chen - Chief Executive Officer (CEO)
+- **Employee ID**: EMP001
+- **Department**: Executive
+- **Email**: sarah.chen@techcorp.com
+- **Phone**: (415) 555-0101
+- **Office**: San Francisco HQ, Floor 10
+- **Hire Date**: January 15, 2010
+- **Salary**: $450,000
+- **Reports To**: Board of Directors
+- **Education**: MBA from Stanford University, BS in Computer Science from MIT
+- **Background**: Former VP of Engineering at Google, 20+ years in tech industry
+
+### Michael Rodriguez - Chief Technology Officer (CTO)
+- **Employee ID**: EMP002
+- **Department**: Engineering
+- **Email**: michael.rodriguez@techcorp.com
+- **Phone**: (415) 555-0102
+- **Office**: San Francisco HQ, Floor 9
+- **Hire Date**: March 1, 2010
+- **Salary**: $420,000
+- **Reports To**: Sarah Chen (CEO)
+- **Education**: PhD in Computer Science from Carnegie Mellon University
+- **Background**: Lead architect at Amazon Web Services, expert in distributed systems
+
+### Jennifer Liu - Chief Financial Officer (CFO)
+- **Employee ID**: EMP003
+- **Department**: Finance
+- **Email**: jennifer.liu@techcorp.com
+- **Phone**: (415) 555-0103
+- **Office**: San Francisco HQ, Floor 10
+- **Hire Date**: June 1, 2011
+- **Salary**: $380,000
+- **Reports To**: Sarah Chen (CEO)
+- **Education**: MBA from Wharton, CPA certified
+- **Background**: Former Finance Director at Salesforce
+
+### David Park - Chief Operating Officer (COO)
+- **Employee ID**: EMP004
+- **Department**: Operations
+- **Email**: david.park@techcorp.com
+- **Phone**: (415) 555-0104
+- **Office**: San Francisco HQ, Floor 10
+- **Hire Date**: September 15, 2011
+- **Salary**: $400,000
+- **Reports To**: Sarah Chen (CEO)
+- **Education**: MBA from Harvard Business School
+- **Background**: Operations executive with 15 years experience
+
+### Maria Garcia - Chief Marketing Officer (CMO)
+- **Employee ID**: EMP005
+- **Department**: Marketing
+- **Email**: maria.garcia@techcorp.com
+- **Phone**: (415) 555-0105
+- **Office**: San Francisco HQ, Floor 8
+- **Hire Date**: January 10, 2012
+- **Salary**: $360,000
+- **Reports To**: Sarah Chen (CEO)
+- **Education**: MBA from UCLA Anderson School of Management
+- **Background**: VP Marketing at Adobe, digital marketing expert
+
+---
+
+## Engineering Department (150 employees)
+
+### Senior Engineering Managers
+
+**James Wilson - VP of Engineering**
+- Employee ID: EMP006
+- Email: james.wilson@techcorp.com
+- Salary: $320,000
+- Location: San Francisco
+- Reports To: Michael Rodriguez (CTO)
+- Team Size: 50 engineers
+
+**Emily Thompson - Senior Engineering Manager - AI/ML**
+- Employee ID: EMP007
+- Email: emily.thompson@techcorp.com
+- Salary: $280,000
+- Location: San Francisco
+- Reports To: James Wilson
+- Team Size: 25 engineers
+- Specialization: Machine Learning, Deep Learning, NLP
+
+**Robert Johnson - Senior Engineering Manager - Cloud Infrastructure**
+- Employee ID: EMP008
+- Email: robert.johnson@techcorp.com
+- Salary: $275,000
+- Location: Seattle
+- Reports To: James Wilson
+- Team Size: 30 engineers
+- Specialization: AWS, Kubernetes, DevOps
+
+### Software Engineers
+
+**Alex Kumar - Senior Software Engineer**
+- Employee ID: EMP015
+- Email: alex.kumar@techcorp.com
+- Salary: $185,000
+- Location: San Francisco
+- Reports To: Emily Thompson
+- Skills: Python, TensorFlow, PyTorch, Machine Learning
+- Years of Experience: 8 years
+- Projects: AI-powered recommendation system, chatbot development
+
+**Lisa Anderson - Software Engineer II**
+- Employee ID: EMP016
+- Email: lisa.anderson@techcorp.com
+- Salary: $145,000
+- Location: Austin
+- Reports To: Robert Johnson
+- Skills: Go, Docker, Kubernetes, AWS
+- Years of Experience: 5 years
+- Projects: Microservices architecture, CI/CD pipeline
+
+**Kevin Patel - Junior Software Engineer**
+- Employee ID: EMP017
+- Email: kevin.patel@techcorp.com
+- Salary: $95,000
+- Location: Boston
+- Reports To: Robert Johnson
+- Skills: JavaScript, React, Node.js, MongoDB
+- Years of Experience: 2 years
+- Projects: Customer dashboard, API development
+
+---
+
+## Product Management (25 employees)
+
+**Amanda Brooks - VP of Product**
+- Employee ID: EMP020
+- Email: amanda.brooks@techcorp.com
+- Salary: $300,000
+- Location: San Francisco
+- Reports To: Sarah Chen (CEO)
+- Team Size: 24 product managers
+
+**Rachel Green - Senior Product Manager**
+- Employee ID: EMP021
+- Email: rachel.green@techcorp.com
+- Salary: $165,000
+- Location: San Francisco
+- Reports To: Amanda Brooks
+- Product Area: Enterprise AI Solutions
+- Years of Experience: 7 years
+
+**Tom Martinez - Product Manager**
+- Employee ID: EMP022
+- Email: tom.martinez@techcorp.com
+- Salary: $135,000
+- Location: New York
+- Reports To: Amanda Brooks
+- Product Area: Cloud Platform
+- Years of Experience: 4 years
+
+---
+
+## Sales Department (80 employees)
+
+**Steven Adams - VP of Sales**
+- Employee ID: EMP030
+- Email: steven.adams@techcorp.com
+- Salary: $290,000
+- Location: New York
+- Reports To: David Park (COO)
+- Team Size: 79 sales professionals
+
+**Michelle Lee - Sales Director - Enterprise**
+- Employee ID: EMP031
+- Email: michelle.lee@techcorp.com
+- Salary: $220,000
+- Location: New York
+- Reports To: Steven Adams
+- Territory: East Coast
+- Team Size: 20 account executives
+
+**Brian Cooper - Senior Account Executive**
+- Employee ID: EMP032
+- Email: brian.cooper@techcorp.com
+- Salary: $150,000 + commission
+- Location: Austin
+- Reports To: Michelle Lee
+- Territory: Texas region
+- Years of Experience: 6 years
+- Top Performer: Exceeded quota by 180% in 2024
+
+---
+
+## Marketing Department (35 employees)
+
+**Jessica Taylor - VP of Marketing Operations**
+- Employee ID: EMP040
+- Email: jessica.taylor@techcorp.com
+- Salary: $240,000
+- Location: San Francisco
+- Reports To: Maria Garcia (CMO)
+- Team Size: 34 marketing professionals
+
+**Daniel Kim - Digital Marketing Manager**
+- Employee ID: EMP041
+- Email: daniel.kim@techcorp.com
+- Salary: $125,000
+- Location: San Francisco
+- Reports To: Jessica Taylor
+- Specialization: SEO, SEM, Social Media Marketing
+
+**Sophie Williams - Content Marketing Manager**
+- Employee ID: EMP042
+- Email: sophie.williams@techcorp.com
+- Salary: $115,000
+- Location: Remote
+- Reports To: Jessica Taylor
+- Specialization: Technical writing, blog management, whitepapers
+
+---
+
+## Human Resources (20 employees)
+
+**Laura Mitchell - Chief People Officer**
+- Employee ID: EMP050
+- Email: laura.mitchell@techcorp.com
+- Salary: $270,000
+- Location: San Francisco
+- Reports To: Sarah Chen (CEO)
+- Team Size: 19 HR professionals
+
+**Chris Brown - HR Business Partner**
+- Employee ID: EMP051
+- Email: chris.brown@techcorp.com
+- Salary: $110,000
+- Location: San Francisco
+- Reports To: Laura Mitchell
+- Supports: Engineering and Product departments
+
+**Nicole Davis - Talent Acquisition Manager**
+- Employee ID: EMP052
+- Email: nicole.davis@techcorp.com
+- Salary: $105,000
+- Location: San Francisco
+- Reports To: Laura Mitchell
+- Focus: Technical recruiting
+
+---
+
+## Finance Department (30 employees)
+
+**Andrew White - VP of Finance**
+- Employee ID: EMP060
+- Email: andrew.white@techcorp.com
+- Salary: $250,000
+- Location: San Francisco
+- Reports To: Jennifer Liu (CFO)
+- Team Size: 29 finance professionals
+
+**Patricia Moore - Financial Analyst**
+- Employee ID: EMP061
+- Email: patricia.moore@techcorp.com
+- Salary: $95,000
+- Location: San Francisco
+- Reports To: Andrew White
+- Specialization: Financial modeling, forecasting
+
+**Mark Jackson - Accounting Manager**
+- Employee ID: EMP062
+- Email: mark.jackson@techcorp.com
+- Salary: $115,000
+- Location: San Francisco
+- Reports To: Andrew White
+- Certifications: CPA
+
+---
+
+## Customer Success (45 employees)
+
+**Ryan Thomas - VP of Customer Success**
+- Employee ID: EMP070
+- Email: ryan.thomas@techcorp.com
+- Salary: $260,000
+- Location: Austin
+- Reports To: David Park (COO)
+- Team Size: 44 customer success professionals
+
+**Olivia Harris - Customer Success Manager**
+- Employee ID: EMP071
+- Email: olivia.harris@techcorp.com
+- Salary: $105,000
+- Location: Seattle
+- Reports To: Ryan Thomas
+- Portfolio: 25 enterprise clients
+- Customer Satisfaction Score: 4.8/5.0
+
+**Ethan Clark - Technical Support Specialist**
+- Employee ID: EMP072
+- Email: ethan.clark@techcorp.com
+- Salary: $75,000
+- Location: Remote
+- Reports To: Ryan Thomas
+- Specialization: Technical troubleshooting, customer training
+
+---
+
+## Data Science & Analytics (30 employees)
+
+**Dr. Samantha Reed - Director of Data Science**
+- Employee ID: EMP080
+- Email: samantha.reed@techcorp.com
+- Salary: $280,000
+- Location: San Francisco
+- Reports To: Michael Rodriguez (CTO)
+- Team Size: 29 data scientists and analysts
+- Education: PhD in Statistics from UC Berkeley
+
+**Jason Turner - Senior Data Scientist**
+- Employee ID: EMP081
+- Email: jason.turner@techcorp.com
+- Salary: $175,000
+- Location: San Francisco
+- Reports To: Samantha Reed
+- Skills: Python, R, SQL, Machine Learning, Statistical Modeling
+- Years of Experience: 6 years
+
+**Megan Phillips - Data Analyst**
+- Employee ID: EMP082
+- Email: megan.phillips@techcorp.com
+- Salary: $95,000
+- Location: Austin
+- Reports To: Samantha Reed
+- Skills: SQL, Tableau, Python, Data Visualization
+- Years of Experience: 3 years
+
+---
+
+## IT & Security (25 employees)
+
+**William Carter - VP of IT & Security**
+- Employee ID: EMP090
+- Email: william.carter@techcorp.com
+- Salary: $270,000
+- Location: San Francisco
+- Reports To: Michael Rodriguez (CTO)
+- Team Size: 24 IT professionals
+
+**Rebecca Evans - IT Manager**
+- Employee ID: EMP091
+- Email: rebecca.evans@techcorp.com
+- Salary: $130,000
+- Location: San Francisco
+- Reports To: William Carter
+- Responsibilities: Internal IT support, infrastructure management
+
+**Tyler Scott - Security Engineer**
+- Employee ID: EMP092
+- Email: tyler.scott@techcorp.com
+- Salary: $155,000
+- Location: San Francisco
+- Reports To: William Carter
+- Certifications: CISSP, CEH
+- Specialization: Application security, penetration testing
+
+---
+
+## Office Locations & Headcount
+
+**San Francisco HQ**: 280 employees
+**New York**: 95 employees
+**Austin**: 70 employees
+**Seattle**: 50 employees
+**Boston**: 28 employees
+
+---
+
+## Benefits & Perks
+
+- Comprehensive health insurance (medical, dental, vision)
+- 401(k) matching up to 6%
+- Unlimited PTO policy
+- Remote work flexibility
+- Professional development budget: $3,000/year
+- Gym membership reimbursement
+- Commuter benefits
+- Stock options for all employees
+- Quarterly team building events
+- Free lunch on Fridays
+- Standing desks and ergonomic equipment
+- Parental leave: 16 weeks paid
+
+---
+
+## Diversity & Inclusion Statistics
+
+- Gender: 48% Female, 51% Male, 1% Non-binary
+- Underrepresented minorities: 42%
+- Veterans: 5%
+- Age diversity: 18-25 (12%), 26-35 (45%), 36-45 (28%), 46+ (15%)
+
+---
+
+*Last Updated: November 26, 2025*
+*Document Classification: Internal Use Only*

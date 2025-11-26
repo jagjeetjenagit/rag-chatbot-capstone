@@ -1,9 +1,53 @@
-# RAG Chatbot - Retrieval-Augmented Generation System
+# 📚 RAG Chatbot - Intelligent Document Q&A System
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Gradio](https://img.shields.io/badge/Gradio-3.50.2-orange.svg)](https://gradio.app/)
 
-A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that allows users to upload documents and ask questions about their content. The system uses semantic search to retrieve relevant information and generates accurate, context-aware answers with source attribution.
+A production-ready **Retrieval-Augmented Generation (RAG)** chatbot that answers questions based on your document collection. Built with ChromaDB, Sentence Transformers, and Gradio. Pre-loaded with 20+ comprehensive documents covering technical topics and business data.
+
+## ⚡ Quick Start (3 Steps)
+
+### 1️⃣ Install Dependencies
+```bash
+# Activate virtual environment
+.venv\Scripts\Activate.ps1
+
+# Install packages
+pip install -r requirements.txt
+```
+
+### 2️⃣ Add Your API Key
+**Only edit the `.env` file - that's where all API keys go!**
+
+Open `.env` and add your key (choose ONE):
+
+```env
+# Option A: OpenAI (Recommended)
+OPENAI_API_KEY=sk-your-key-here
+
+# Option B: Google Gemini  
+GOOGLE_API_KEY=your-key-here
+
+# Option C: Skip this - works without API!
+```
+
+**Get API keys:**
+- OpenAI: https://platform.openai.com/api-keys (~$0.002 per 1K tokens)
+- Google: https://makersuite.google.com/app/apikey (free tier available)
+
+### 3️⃣ Run the App
+```bash
+# Make sure venv is activated, then:
+python start.py
+
+# Or run directly with venv python:
+& "C:/capstone project 1/.venv/Scripts/python.exe" start.py
+```
+
+Open http://localhost:7860 - Done! 🎉
+
+---
 
 ## 🌟 Features
 
@@ -656,6 +700,42 @@ This project is licensed under the MIT License.
 - **OpenAI / Google** for LLM APIs
 - **PyPDF2** and **python-docx** for document processing
 
+## 🌐 Deployment
+
+### Hugging Face Spaces (Recommended - FREE)
+
+This app is ready to deploy on Hugging Face Spaces:
+
+1. Create account at https://huggingface.co/join
+2. Create new Space with Gradio SDK
+3. Push your code:
+```bash
+git remote add hf https://huggingface.co/spaces/YOUR_USERNAME/rag-chatbot
+git push hf main
+```
+
+**See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed deployment instructions for:**
+- Hugging Face Spaces (FREE)
+- Render (FREE tier)
+- Railway (FREE tier)
+- Heroku (Paid)
+
+## 📊 Document Collection
+
+The system includes **20 comprehensive documents** (139 indexed chunks):
+
+**Technical Documents (5):**
+- Machine Learning, Python, AI, Deep Learning, Data Science
+
+**Company Documents (15):**
+- HR Policies, Financial Reports, Salary Data, Performance Metrics, Training Programs, Strategic Initiatives, and more
+
+## 📧 Contact
+
+**Author**: Jagjeet Jena  
+**GitHub**: [@jagjeetjenagit](https://github.com/jagjeetjenagit)  
+**Repository**: [rag-chatbot-capstone](https://github.com/jagjeetjenagit/rag-chatbot-capstone)
+
 ## 📞 Support
 
 For issues, questions, or suggestions:
@@ -665,4 +745,9 @@ For issues, questions, or suggestions:
 
 ---
 
+**⭐ Star this repo if you find it useful!**
+
+**🚀 Deploy now:** [Deployment Guide](DEPLOYMENT_GUIDE.md)
+
 **Built with ❤️ for the RAG Chatbot Capstone Project**
+
