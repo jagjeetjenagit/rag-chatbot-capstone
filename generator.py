@@ -389,12 +389,14 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
         
         for sentence in sentences[:15]:
             sentence = sentence.strip()
-            if len(sentence) < 30 or len(sentence) > 200:  # Skip very short or very long
+            if len(sentence) < 30 or len(sentence) > 250:  # Increased max length
                 continue
             
-            # Skip if it's just a header or label
+            # Skip if it's ONLY a header (short sentence ending with colon)
             sentence_lower = sentence.lower()
-            if sentence.endswith(':') or sentence.isupper():
+            if len(sentence) < 60 and sentence.endswith(':'):  # Only skip short lines ending with colon
+                continue
+            if sentence.isupper() and len(sentence) < 100:  # Skip short all-caps headers
                 continue
             if any(skip in sentence_lower for skip in ['key financial highlights', 'executive summary', 'report period']):
                 continue
@@ -408,12 +410,12 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
             # Prioritize sentences with query keywords
             if any(word in sentence_lower for word in query_words):
                 answer_parts.append(sentence)
-                if len(answer_parts) >= 2:  # Stop at 2 good sentences
+                if len(answer_parts) >= 3:  # Increase to 3 sentences
                     break
         
         if answer_parts:
-            # STRICT LIMIT: Max 2 sentences for concise answers
-            answer_parts = answer_parts[:2]
+            # Allow up to 3 sentences for complete answers
+            answer_parts = answer_parts[:3]
             
             # Simple paragraph format - no numbering if just 1-2 items
             clean_parts = [re.sub(r'\s+', ' ', part.strip()) for part in answer_parts]
@@ -422,11 +424,11 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
             # Fallback: just take first good sentence
             for s in sentences[:10]:
                 s = s.strip()
-                if 30 < len(s) < 200:
+                if 30 < len(s) < 250 and not (len(s) < 60 and s.endswith(':')):
                     answer = re.sub(r'\s+', ' ', s)
                     break
             else:
-                answer = best_section[:200].strip() + '...'
+                answer = best_section[:250].strip() + '...'
     else:
         # Last resort: get first meaningful content - KEEP IT SHORT
         clean_text = re.sub(r'\s*\|\s*', ', ', chunk_text)
