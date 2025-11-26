@@ -391,23 +391,32 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
                 break
         
         if answer_parts:
+            # Limit to top 3-4 most relevant points for cleaner display
+            answer_parts = answer_parts[:4]
+            
             # Format as bullet points if multiple items, otherwise paragraph
             if len(answer_parts) > 2:
-                answer = '\n\n'.join(f"• {part}" if not part.startswith('-') else part for part in answer_parts)
+                # Clean each part individually first
+                clean_parts = []
+                for part in answer_parts:
+                    # Normalize spaces within each bullet point
+                    clean_part = re.sub(r'\s+', ' ', part.strip())
+                    clean_parts.append(clean_part)
+                answer = '\n\n'.join(f"• {part}" for part in clean_parts)
             else:
-                answer = '\n\n'.join(answer_parts)
+                # For 1-2 items, show as paragraphs
+                clean_parts = [re.sub(r'\s+', ' ', part.strip()) for part in answer_parts]
+                answer = '\n\n'.join(clean_parts)
         else:
-            answer = best_section[:500].strip() + '...'
+            answer = best_section[:400].strip() + '...'
     else:
         # Last resort: get first meaningful content
         clean_text = re.sub(r'\s*\|\s*', ', ', chunk_text)
         clean_text = re.sub(r'\s*—\s*', ' - ', clean_text)
-        answer = clean_text[:400].strip() + '...'
+        answer = clean_text[:300].strip() + '...'
     
-    # Final cleanup
+    # Final cleanup - preserve paragraph/bullet structure
     answer = re.sub(r'\n{3,}', '\n\n', answer)
-    answer = re.sub(r'\s+', ' ', answer)  # Normalize spaces
-    answer = re.sub(r'\s*\n\s*', '\n', answer)  # Clean newlines
     answer = answer.strip()
     
     # Calculate confidence based on keyword overlap
