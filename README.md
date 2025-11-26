@@ -1,6 +1,6 @@
 ---
-title: RAG Chatbot - Document Q&A
-emoji: 📚
+title: Company Data Q&A System
+emoji: 🏢
 colorFrom: blue
 colorTo: green
 sdk: gradio
@@ -10,13 +10,13 @@ pinned: false
 license: mit
 ---
 
-# 📚 RAG Chatbot - Intelligent Document Q&A System
+# 🏢 Company Data Q&A System
 
-Ask questions about our comprehensive document collection and get accurate answers with source citations!
+Ask questions about company documents including financials, HR policies, salaries, performance metrics, and strategic initiatives!
 
 ## 🌟 Features
 
-- **20+ Documents Indexed**: Technical guides and business data
+- **11 Company Documents Indexed**: Business and operational data from 2025
 - **Smart Search**: Semantic search using ChromaDB vector database
 - **Source Citations**: Every answer includes references
 - **Interactive UI**: Adjustable parameters for customized responses
