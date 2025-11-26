@@ -203,20 +203,22 @@ class RAGChatbot:
         """Clean and format the answer for better readability in chat bubbles"""
         import re
         
-        # Remove ALL markdown syntax for clean chat display
-        answer = re.sub(r'\*\*([^*]+)\*\*', r'\1', answer)  # Remove bold
-        answer = re.sub(r'#{1,6}\s*', '', answer)  # Remove headers
-        answer = re.sub(r'^-{3,}\s*$', '', answer, flags=re.MULTILINE)  # Remove horizontal rules
-        
         # Remove document metadata
+        answer = re.sub(r'\*\*Report Period\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Prepared by\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Report Date\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Classification\*\*:[^\n]+', '', answer)
         answer = re.sub(r'Report Period:[^\n]+', '', answer)
         answer = re.sub(r'Prepared by:[^\n]+', '', answer)
         answer = re.sub(r'Report Date:[^\n]+', '', answer)
         answer = re.sub(r'Classification:[^\n]+', '', answer)
         
-        # Clean up excessive whitespace but preserve line breaks
+        # Remove horizontal rules
+        answer = re.sub(r'^-{3,}\s*$', '', answer, flags=re.MULTILINE)
+        
+        # Clean up excessive whitespace but preserve line breaks for markdown
         answer = re.sub(r'\n{3,}', '\n\n', answer)
-        answer = re.sub(r' {2,}', ' ', answer)  # Multiple spaces to single
+        answer = re.sub(r' {2,}', ' ', answer)
         
         return answer.strip()
     
@@ -306,7 +308,8 @@ def create_gradio_interface():
                     height=500,
                     bubble_full_width=False,
                     show_label=True,
-                    elem_classes="message-bubble-border"
+                    elem_classes="message-bubble-border",
+                    render_markdown=True
                 )
         
         with gr.Row():
