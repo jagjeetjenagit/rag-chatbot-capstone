@@ -1,5 +1,6 @@
 # Vector Database - Persistent storage for document embeddings
 chromadb>=0.4.0
+pydantic>=2.0.0
 
 # LLM Framework - Orchestrates chains, prompts, and document processing
 langchain==0.0.350
