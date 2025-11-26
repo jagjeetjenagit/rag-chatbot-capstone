@@ -355,34 +355,59 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
                 break
     
     if best_section:
-        # Extract key sentences from the section
+        # Create a structured, readable answer
+        # Remove inline formatting clutter
+        best_section = re.sub(r'\*\*([^*]+)\*\*', r'**\1**', best_section)  # Keep bold but clean it
+        best_section = re.sub(r'\s*—\s*', ' - ', best_section)  # Clean dashes
+        best_section = re.sub(r'\s*\|\s*', ', ', best_section)  # Replace pipes with commas
+        
+        # Split into sentences
         sentences = re.split(r'(?<=[.!?])\s+', best_section)
-        relevant_sentences = []
         
-        for sentence in sentences[:15]:
+        # Build a clean answer with key points
+        answer_parts = []
+        seen_content = set()
+        
+        for sentence in sentences[:20]:
             sentence = sentence.strip()
-            if len(sentence) < 20:
+            if len(sentence) < 30:
                 continue
+            
+            # Skip duplicate-like content
+            sent_key = sentence.lower()[:50]
+            if sent_key in seen_content:
+                continue
+            seen_content.add(sent_key)
+            
             sentence_lower = sentence.lower()
-            # Include sentences with query keywords or that are informative
-            if any(word in sentence_lower for word in query_words) or len(relevant_sentences) < 2:
-                # Clean up formatting in sentence
-                sentence = re.sub(r'\*\*([^*]+)\*\*', r'\1', sentence)  # Remove bold
-                sentence = re.sub(r'^#{1,6}\s+', '', sentence)  # Remove headers
-                relevant_sentences.append(sentence)
-                if len(relevant_sentences) >= 4:
-                    break
+            
+            # Prioritize sentences with query keywords
+            if any(word in sentence_lower for word in query_words):
+                answer_parts.append(sentence)
+            elif len(answer_parts) < 2:  # Include first 2 sentences even without keywords
+                answer_parts.append(sentence)
+            
+            if len(answer_parts) >= 5:
+                break
         
-        if relevant_sentences:
-            answer = '\n\n'.join(relevant_sentences[:4])
+        if answer_parts:
+            # Format as bullet points if multiple items, otherwise paragraph
+            if len(answer_parts) > 2:
+                answer = '\n\n'.join(f"• {part}" if not part.startswith('-') else part for part in answer_parts)
+            else:
+                answer = '\n\n'.join(answer_parts)
         else:
             answer = best_section[:500].strip() + '...'
     else:
         # Last resort: get first meaningful content
-        answer = chunk_text[:400].strip() + '...'
+        clean_text = re.sub(r'\s*\|\s*', ', ', chunk_text)
+        clean_text = re.sub(r'\s*—\s*', ' - ', clean_text)
+        answer = clean_text[:400].strip() + '...'
     
     # Final cleanup
     answer = re.sub(r'\n{3,}', '\n\n', answer)
+    answer = re.sub(r'\s+', ' ', answer)  # Normalize spaces
+    answer = re.sub(r'\s*\n\s*', '\n', answer)  # Clean newlines
     answer = answer.strip()
     
     # Calculate confidence based on keyword overlap
