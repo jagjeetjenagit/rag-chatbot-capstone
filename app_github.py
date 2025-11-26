@@ -414,13 +414,12 @@ def main():
         demo = create_gradio_interface()
         
         logger.info("Launching Gradio interface...")
-        demo.queue()  # Enable queue for better HF Space compatibility
         demo.launch(
-            server_name="0.0.0.0",  # Allow external access
+            server_name="0.0.0.0",
             server_port=7860,
             share=False,
             show_error=True,
-            enable_queue=True
+            debug=True
         )
         
     except KeyboardInterrupt:
