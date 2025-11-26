@@ -38,9 +38,13 @@ class RAGChatbot:
         logger.info("Initializing RAG Chatbot...")
         
         try:
-            # Initialize retriever
+            # Initialize retriever with explicit parameters
             logger.info("Loading document retriever...")
-            self.retriever = DocumentRetriever()
+            self.retriever = DocumentRetriever(
+                chroma_db_path="./chroma_db",
+                collection_name="capstone_docs",
+                similarity_threshold=0.2
+            )
             logger.info("✅ Document retriever loaded successfully")
             
             # Initialize generator

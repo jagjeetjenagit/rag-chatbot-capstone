@@ -59,6 +59,26 @@ def main():
         
         if result.returncode == 0:
             logger.info("✅ Documents indexed successfully")
+            
+            # Verify ChromaDB was created
+            if not os.path.exists("chroma_db"):
+                logger.error("❌ ChromaDB directory not created after indexing!")
+                sys.exit(1)
+            
+            # Check if collection has documents
+            try:
+                import chromadb
+                from chroma_client import get_chroma_client
+                client = get_chroma_client("./chroma_db")
+                collection = client.get_collection("capstone_docs")
+                count = collection.count()
+                logger.info(f"✅ ChromaDB collection has {count} documents")
+                if count == 0:
+                    logger.error("❌ ChromaDB collection is empty!")
+                    sys.exit(1)
+            except Exception as e:
+                logger.error(f"❌ Failed to verify ChromaDB: {e}")
+                sys.exit(1)
         else:
             logger.error("❌ Failed to index documents")
             logger.error(f"Return code: {result.returncode}")
