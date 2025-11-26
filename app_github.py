@@ -192,44 +192,18 @@ class RAGChatbot:
         """Clean and format the answer for better readability"""
         import re
         
-        # Remove document metadata (Report Period, Prepared by, etc.)
-        answer = re.sub(r'\*\*[^:]+\*\*:\s*[^\n]+\n?', '', answer)
-        
-        # Remove markdown headers at the start if they're document titles
-        lines = answer.split('\n')
-        cleaned_lines = []
-        skip_headers = True
-        
-        for line in lines:
-            # Skip initial headers and metadata
-            if skip_headers:
-                if line.strip().startswith('#') or line.strip().startswith('**'):
-                    continue
-                elif line.strip().startswith('---'):
-                    continue
-                elif not line.strip():
-                    continue
-                else:
-                    skip_headers = False
-            
-            if not skip_headers:
-                cleaned_lines.append(line)
-        
-        answer = '\n'.join(cleaned_lines).strip()
-        
-        # Remove excessive whitespace
+        # Just do minimal cleanup - let the answer keep its structure
+        # Remove excessive blank lines
         answer = re.sub(r'\n{3,}', '\n\n', answer)
         
-        # Fix markdown headers - ensure proper spacing
-        answer = re.sub(r'(#{1,6})\s*([^\n]+)', r'\1 \2\n', answer)
+        # Remove any remaining document metadata artifacts
+        answer = re.sub(r'\*\*Report Period\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Prepared by\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Report Date\*\*:[^\n]+', '', answer)
+        answer = re.sub(r'\*\*Classification\*\*:[^\n]+', '', answer)
         
-        # Ensure proper spacing around bullet points
-        answer = re.sub(r'\n-\s', '\n\n- ', answer)
-        answer = re.sub(r'\n\*\s', '\n\n* ', answer)
-        
-        # Remove remaining bold markers if they're excessive
-        # Keep them if they're actual emphasis, remove if they're formatting artifacts
-        answer = re.sub(r'\*\*(\w+)\*\*:', r'\1:', answer)
+        # Remove horizontal rules
+        answer = re.sub(r'^-{3,}\s*$', '', answer, flags=re.MULTILINE)
         
         return answer.strip()
     

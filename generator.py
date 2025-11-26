@@ -319,47 +319,71 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
     best_chunk = chunk_scores[0][1]
     chunk_text = best_chunk.get('text', '')
     
-    # Clean the text - remove excessive headers and formatting
-    # Remove markdown headers
-    chunk_text = re.sub(r'^#{1,6}\s+', '', chunk_text, flags=re.MULTILINE)
-    # Remove multiple asterisks (bold markers)
-    chunk_text = re.sub(r'\*\*([^*]+)\*\*', r'\1', chunk_text)
+    # Clean the text - remove document metadata but keep structure
     # Remove report metadata lines
-    chunk_text = re.sub(r'\*\*[^:]+\*\*:\s*[^\n]+\n', '', chunk_text)
+    chunk_text = re.sub(r'\*\*Report Period\*\*:[^\n]+\n', '', chunk_text)
+    chunk_text = re.sub(r'\*\*Prepared by\*\*:[^\n]+\n', '', chunk_text)
+    chunk_text = re.sub(r'\*\*Report Date\*\*:[^\n]+\n', '', chunk_text)
+    chunk_text = re.sub(r'\*\*Classification\*\*:[^\n]+\n', '', chunk_text)
     # Remove horizontal rules
     chunk_text = re.sub(r'^-{3,}\s*$', '', chunk_text, flags=re.MULTILINE)
-    # Clean up multiple newlines
-    chunk_text = re.sub(r'\n{3,}', '\n\n', chunk_text)
+    # Remove document title headers (starting with #)
+    chunk_text = re.sub(r'^#{1,6}\s+[^\n]+Report[^\n]+\n', '', chunk_text, flags=re.MULTILINE)
     
-    # Simple sentence extraction (first 3-4 sentences with query words)
-    sentences = re.split(r'[.!?]+\s+', chunk_text.strip())
-    relevant_sentences = []
+    # Split into paragraphs/sections
+    sections = chunk_text.split('\n\n')
     
-    for sentence in sentences[:10]:  # Check first 10 sentences
-        sentence = sentence.strip()
-        if not sentence or len(sentence) < 20:  # Skip very short sentences
+    # Find the most relevant section (usually Executive Summary or content after headers)
+    best_section = None
+    for section in sections:
+        section = section.strip()
+        if not section:
             continue
-        sentence_lower = sentence.lower()
-        if any(word in sentence_lower for word in query_words):
-            relevant_sentences.append(sentence)
-            if len(relevant_sentences) >= 3:
+        # Skip metadata sections
+        if any(skip in section.lower() for skip in ['report period', 'prepared by', 'classification']):
+            continue
+        # Look for content sections
+        if len(section) > 100 and any(word in section.lower() for word in query_words):
+            best_section = section
+            break
+    
+    if not best_section:
+        # Fallback to first substantial section
+        for section in sections:
+            if len(section.strip()) > 100:
+                best_section = section.strip()
                 break
     
-    if relevant_sentences:
-        # Create a clean, formatted answer
-        answer = '. '.join(relevant_sentences)
-        if not answer.endswith('.'):
-            answer += '.'
-    else:
-        # Fallback: extract key information from chunk
-        # Find first substantive sentence (at least 30 chars)
-        for sent in sentences:
-            sent = sent.strip()
-            if len(sent) >= 30:
-                answer = sent + '.'
-                break
+    if best_section:
+        # Extract key sentences from the section
+        sentences = re.split(r'(?<=[.!?])\s+', best_section)
+        relevant_sentences = []
+        
+        for sentence in sentences[:15]:
+            sentence = sentence.strip()
+            if len(sentence) < 20:
+                continue
+            sentence_lower = sentence.lower()
+            # Include sentences with query keywords or that are informative
+            if any(word in sentence_lower for word in query_words) or len(relevant_sentences) < 2:
+                # Clean up formatting in sentence
+                sentence = re.sub(r'\*\*([^*]+)\*\*', r'\1', sentence)  # Remove bold
+                sentence = re.sub(r'^#{1,6}\s+', '', sentence)  # Remove headers
+                relevant_sentences.append(sentence)
+                if len(relevant_sentences) >= 4:
+                    break
+        
+        if relevant_sentences:
+            answer = '\n\n'.join(relevant_sentences[:4])
         else:
-            answer = chunk_text[:300].strip() + '...'
+            answer = best_section[:500].strip() + '...'
+    else:
+        # Last resort: get first meaningful content
+        answer = chunk_text[:400].strip() + '...'
+    
+    # Final cleanup
+    answer = re.sub(r'\n{3,}', '\n\n', answer)
+    answer = answer.strip()
     
     # Calculate confidence based on keyword overlap
     max_overlap = chunk_scores[0][2]
