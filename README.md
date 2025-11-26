@@ -5,10 +5,9 @@ colorFrom: blue
 colorTo: green
 sdk: gradio
 sdk_version: 3.50.2
-app_file: startup.sh
+app_file: run_app.py
 pinned: false
 license: mit
-startup_duration_timeout: 60m
 ---
 
 # 📚 RAG Chatbot - Intelligent Document Q&A System
