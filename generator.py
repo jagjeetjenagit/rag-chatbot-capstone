@@ -623,3 +623,42 @@ if __name__ == "__main__":
     print("  chunks = get_top_k('your question', k=4)")
     print("  result = generate_answer('your question', chunks)")
     print("  print(result['answer'])")
+
+
+# ============================================================================
+# CLASS WRAPPER FOR COMPATIBILITY
+# ============================================================================
+
+class ResponseGenerator:
+    """
+    Wrapper class for generate_answer function to provide compatibility
+    with app_github.py which expects a class-based interface.
+    """
+    
+    def __init__(self, temperature: float = 0.7):
+        """
+        Initialize the ResponseGenerator.
+        
+        Args:
+            temperature: Generation temperature (currently not used in function-based approach)
+        """
+        self.temperature = temperature
+        logger.info("ResponseGenerator initialized")
+    
+    def generate(self, query: str, retrieved_docs: List[Dict[str, Any]], 
+                 temperature: float = None) -> str:
+        """
+        Generate a response based on query and retrieved documents.
+        
+        Args:
+            query: The user's question
+            retrieved_docs: List of retrieved document chunks
+            temperature: Optional temperature override
+            
+        Returns:
+            str: The generated answer
+        """
+        # Call the underlying generate_answer function
+        result = generate_answer(query, retrieved_docs)
+        return result.get('answer', 'Unable to generate answer.')
+
