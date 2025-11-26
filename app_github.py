@@ -338,16 +338,18 @@ def create_gradio_interface():
         
         with gr.Row():
             with gr.Column():
+                gr.Markdown("### 💡 Answer")
                 answer_output = gr.Markdown(
-                    label="Answer",
-                    value=""
+                    value="",
+                    elem_classes="answer-box"
                 )
         
         with gr.Row():
             with gr.Column():
+                gr.Markdown("### 📚 Sources & References")
                 sources_output = gr.Markdown(
-                    label="📚 Sources & References",
-                    value=""
+                    value="",
+                    elem_classes="sources-box"
                 )
         
         # Event handlers
