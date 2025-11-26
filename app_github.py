@@ -135,8 +135,9 @@ class RAGChatbot:
         self, 
         question: str, 
         num_sources: int = 3,
-        temperature: float = 0.7
-    ) -> Tuple[str, str]:
+        temperature: float = 0.7,
+        history: List = None
+    ) -> Tuple[List, str]:
         """
         Answer a question using RAG approach
         
@@ -144,13 +145,17 @@ class RAGChatbot:
             question: User's question
             num_sources: Number of source documents to retrieve
             temperature: Generation temperature (0.0 to 1.0)
+            history: Chat history list
             
         Returns:
-            Tuple of (answer, sources)
+            Tuple of (updated_history, sources)
         """
         try:
             if not question or not question.strip():
-                return "Please enter a valid question.", ""
+                return history or [], ""
+            
+            if history is None:
+                history = []
             
             logger.info(f"Processing question: {question[:100]}...")
             
@@ -162,7 +167,9 @@ class RAGChatbot:
             )
             
             if not retrieved_docs:
-                return "No relevant documents found. Please try rephrasing your question.", ""
+                answer = "No relevant documents found. Please try rephrasing your question."
+                history.append((question, answer))
+                return history, ""
             
             logger.info(f"✅ Retrieved {len(retrieved_docs)} documents")
             
@@ -180,13 +187,17 @@ class RAGChatbot:
             # Format sources
             sources = self._format_sources(retrieved_docs)
             
+            # Add to history
+            history.append((question, answer))
+            
             logger.info("✅ Response generated successfully")
-            return answer, sources
+            return history, sources
             
         except Exception as e:
             error_msg = f"Error processing question: {str(e)}"
             logger.error(error_msg, exc_info=True)
-            return f"❌ {error_msg}", ""
+            history.append((question, f"❌ {error_msg}"))
+            return history, ""
     
     def _clean_answer(self, answer: str) -> str:
         """Clean and format the answer for better readability"""
@@ -237,15 +248,20 @@ def create_gradio_interface():
     logger.info("Initializing RAG Chatbot for Gradio interface...")
     chatbot = RAGChatbot()
     
-    def process_question(question, num_sources, temperature):
+    def process_question(question, num_sources, temperature, history):
         """Process question and return answer with sources"""
-        answer, sources = chatbot.answer_question(question, num_sources, temperature)
-        return answer, sources
+        history, sources = chatbot.answer_question(question, num_sources, temperature, history)
+        return history, sources, ""  # Return empty string to clear input
     
     # Create Gradio interface
     with gr.Blocks(
         title="RAG Chatbot - Document Q&A System",
-        theme=gr.themes.Soft()
+        theme=gr.themes.Soft(),
+        css="""
+        .message-bubble-border {
+            border-radius: 12px !important;
+        }
+        """
     ) as demo:
         gr.Markdown(
             """
@@ -280,13 +296,27 @@ def create_gradio_interface():
         
         gr.Markdown("---")
         
+        # Chat interface
+        with gr.Row():
+            with gr.Column(scale=3):
+                chatbot_display = gr.Chatbot(
+                    label="Conversation",
+                    height=500,
+                    bubble_full_width=False,
+                    show_label=True,
+                    elem_classes="message-bubble-border"
+                )
+        
         with gr.Row():
             with gr.Column(scale=2):
                 question_input = gr.Textbox(
                     label="Your Question",
                     placeholder="e.g., What is the average salary for engineers?",
-                    lines=3
+                    lines=2,
+                    show_label=False
                 )
+                
+                submit_btn = gr.Button("Ask Question", variant="primary", size="lg")
                 
                 with gr.Row():
                     num_sources = gr.Slider(
@@ -307,16 +337,7 @@ def create_gradio_interface():
                         info="Higher = more creative, Lower = more focused"
                     )
                 
-                submit_btn = gr.Button("Ask Question", variant="primary", size="lg")
-                clear_btn = gr.Button("Clear", size="lg")
-        
-        with gr.Row():
-            with gr.Column():
-                gr.Markdown("### 💡 Answer")
-                answer_output = gr.Markdown(
-                    value="",
-                    elem_classes="answer-box"
-                )
+                clear_btn = gr.Button("Clear Chat", size="lg")
         
         with gr.Row():
             with gr.Column():
@@ -329,14 +350,20 @@ def create_gradio_interface():
         # Event handlers
         submit_btn.click(
             fn=process_question,
-            inputs=[question_input, num_sources, temperature],
-            outputs=[answer_output, sources_output]
+            inputs=[question_input, num_sources, temperature, chatbot_display],
+            outputs=[chatbot_display, sources_output, question_input]
+        )
+        
+        question_input.submit(
+            fn=process_question,
+            inputs=[question_input, num_sources, temperature, chatbot_display],
+            outputs=[chatbot_display, sources_output, question_input]
         )
         
         clear_btn.click(
-            fn=lambda: ("", "", ""),
+            fn=lambda: ([], "", ""),
             inputs=[],
-            outputs=[question_input, answer_output, sources_output]
+            outputs=[chatbot_display, sources_output, question_input]
         )
         
         upload_btn.click(
@@ -348,14 +375,14 @@ def create_gradio_interface():
         # Example questions
         gr.Examples(
             examples=[
-                ["What is the average salary for engineers?", 3, 0.7],
-                ["How much profit did the company make in 2025?", 3, 0.7],
-                ["Which department has the highest budget?", 3, 0.7],
-                ["What are the key strategic initiatives for 2025?", 3, 0.7],
-                ["What training programs are available for employees?", 3, 0.7],
-                ["How is employee performance measured?", 3, 0.7],
+                ["What is the average salary for engineers?"],
+                ["How much profit did the company make in 2025?"],
+                ["Which department has the highest budget?"],
+                ["What are the key strategic initiatives for 2025?"],
+                ["What training programs are available for employees?"],
+                ["How is employee performance measured?"],
             ],
-            inputs=[question_input, num_sources, temperature],
+            inputs=[question_input],
             label="Example Questions - Try These!"
         )
         
