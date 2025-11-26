@@ -402,11 +402,12 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
                     # Normalize spaces within each bullet point
                     clean_part = re.sub(r'\s+', ' ', part.strip())
                     clean_parts.append(clean_part)
-                answer = '\n\n'.join(f"• {part}" for part in clean_parts)
+                # Use HTML breaks for proper rendering in Gradio
+                answer = '<br/><br/>'.join(f"• {part}" for part in clean_parts)
             else:
                 # For 1-2 items, show as paragraphs
                 clean_parts = [re.sub(r'\s+', ' ', part.strip()) for part in answer_parts]
-                answer = '\n\n'.join(clean_parts)
+                answer = '<br/><br/>'.join(clean_parts)
         else:
             answer = best_section[:400].strip() + '...'
     else:

@@ -308,8 +308,7 @@ def create_gradio_interface():
                     height=500,
                     bubble_full_width=False,
                     show_label=True,
-                    elem_classes="message-bubble-border",
-                    render_markdown=True
+                    elem_classes="message-bubble-border"
                 )
         
         with gr.Row():
