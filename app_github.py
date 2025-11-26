@@ -66,6 +66,9 @@ class RAGChatbot:
         try:
             from ingestion import DocumentIngestor
             from embeddings_and_chroma_setup import ChromaDBSetup
+            import tempfile
+            import shutil
+            from pathlib import Path
             
             # Initialize document processor
             ingestor = DocumentIngestor(
@@ -79,43 +82,50 @@ class RAGChatbot:
             processed = []
             failed = []
             
-            for file in files:
-                try:
-                    chunks = ingestor.load_and_process_file(file.name)
-                    if chunks:
-                        all_chunks.extend(chunks)
-                        processed.append(file.name.split('/')[-1])
-                    else:
-                        failed.append(file.name.split('/')[-1])
-                except Exception as e:
-                    failed.append(f"{file.name.split('/')[-1]}: {str(e)}")
-            
-            # Index new documents
-            if all_chunks:
-                chroma_setup = ChromaDBSetup(
-                    chroma_db_path="./chroma_db",
-                    collection_name="capstone_docs",
-                    replace_duplicates=True
-                )
-                stats = chroma_setup.upsert_chunks(all_chunks)
+            # Create temp directory for uploaded files
+            with tempfile.TemporaryDirectory() as temp_dir:
+                for file in files:
+                    try:
+                        # file.name contains the path to the temporary file
+                        file_path = Path(file.name)
+                        
+                        # Process the file directly from its temp location
+                        chunks = ingestor.load_and_process_file(str(file_path))
+                        
+                        if chunks:
+                            all_chunks.extend(chunks)
+                            processed.append(file_path.name)
+                        else:
+                            failed.append(file_path.name)
+                    except Exception as e:
+                        failed.append(f"{Path(file.name).name if hasattr(file, 'name') else 'Unknown'}: {str(e)}")
                 
-                # Reinitialize retriever to pick up new docs
-                self.retriever = DocumentRetriever(
-                    chroma_db_path="./chroma_db",
-                    collection_name="capstone_docs",
-                    similarity_threshold=0.2
-                )
-                
-                result = f"✅ Processed {len(processed)} file(s)\n"
-                result += f"📊 Added {stats['new']} chunks, Updated {stats['updated']}\n"
-                result += f"📚 Total documents: {stats['final_count']}"
-                
-                if failed:
-                    result += f"\n\n⚠️ Failed: {', '.join(failed)}"
-                
-                return result
-            else:
-                return "❌ No valid documents to process"
+                # Index new documents
+                if all_chunks:
+                    chroma_setup = ChromaDBSetup(
+                        chroma_db_path="./chroma_db",
+                        collection_name="capstone_docs",
+                        replace_duplicates=True
+                    )
+                    stats = chroma_setup.upsert_chunks(all_chunks)
+                    
+                    # Reinitialize retriever to pick up new docs
+                    self.retriever = DocumentRetriever(
+                        chroma_db_path="./chroma_db",
+                        collection_name="capstone_docs",
+                        similarity_threshold=0.2
+                    )
+                    
+                    result = f"✅ Processed {len(processed)} file(s)\n"
+                    result += f"📊 Added {stats['new']} chunks, Updated {stats['updated']}\n"
+                    result += f"📚 Total documents: {stats['final_count']}"
+                    
+                    if failed:
+                        result += f"\n\n⚠️ Failed: {', '.join(failed)}"
+                    
+                    return result
+                else:
+                    return "❌ No valid documents to process"
                 
         except Exception as e:
             logger.error(f"Upload error: {e}", exc_info=True)
@@ -237,7 +247,7 @@ def create_gradio_interface():
                     label="Select Files",
                     file_count="multiple",
                     file_types=[".pdf", ".txt", ".docx"],
-                    type="filepath"
+                    type="file"
                 )
             upload_btn = gr.Button("Upload & Index", variant="secondary")
             upload_status = gr.Textbox(label="Upload Status", lines=4, interactive=False)
