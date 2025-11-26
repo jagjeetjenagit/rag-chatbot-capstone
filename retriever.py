@@ -418,3 +418,7 @@ if __name__ == "__main__":
         print(f"\n❌ Error during demo: {str(e)}")
         logger.error("Demo failed", exc_info=True)
         exit(1)
+
+
+# Export alias for backwards compatibility
+DocumentRetriever = Retriever
