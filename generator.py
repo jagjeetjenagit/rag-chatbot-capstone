@@ -329,6 +329,11 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
     chunk_text = re.sub(r'^-{3,}\s*$', '', chunk_text, flags=re.MULTILINE)
     # Remove document title headers (starting with #)
     chunk_text = re.sub(r'^#{1,6}\s+[^\n]+Report[^\n]+\n', '', chunk_text, flags=re.MULTILINE)
+    # Remove common section headers that are not content
+    chunk_text = re.sub(r'^#{1,6}\s*Key Financial Highlights[^\n]*\n', '', chunk_text, flags=re.MULTILINE | re.IGNORECASE)
+    chunk_text = re.sub(r'^#{1,6}\s*Executive Summary[^\n]*\n', '', chunk_text, flags=re.MULTILINE | re.IGNORECASE)
+    chunk_text = re.sub(r'^\*\*Key Financial Highlights[^\n]*\n', '', chunk_text, flags=re.MULTILINE | re.IGNORECASE)
+    chunk_text = re.sub(r'^\*\*Executive Summary[^\n]*\n', '', chunk_text, flags=re.MULTILINE | re.IGNORECASE)
     
     # Split into paragraphs/sections
     sections = chunk_text.split('\n\n')
@@ -339,20 +344,34 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
         section = section.strip()
         if not section:
             continue
-        # Skip metadata sections
-        if any(skip in section.lower() for skip in ['report period', 'prepared by', 'classification']):
+        # Skip metadata sections AND section headers
+        skip_phrases = [
+            'report period', 'prepared by', 'classification',
+            'key financial highlights', 'executive summary',
+            'table of contents', 'overview'
+        ]
+        if any(skip in section.lower() for skip in skip_phrases):
             continue
-        # Look for content sections
+        # Skip if it's just a header (very short, ends with colon, or all caps)
+        if len(section) < 50 or section.endswith(':') or section.isupper():
+            continue
+        # Look for content sections with actual data
         if len(section) > 100 and any(word in section.lower() for word in query_words):
             best_section = section
             break
     
     if not best_section:
-        # Fallback to first substantial section
+        # Fallback to first substantial section that's not a header
         for section in sections:
-            if len(section.strip()) > 100:
-                best_section = section.strip()
-                break
+            section = section.strip()
+            # Skip short sections, headers, and common non-content phrases
+            if len(section) < 100 or section.endswith(':') or section.isupper():
+                continue
+            skip_phrases = ['key financial highlights', 'executive summary', 'table of contents']
+            if any(skip in section.lower() for skip in skip_phrases):
+                continue
+            best_section = section
+            break
     
     if best_section:
         # Create a structured, readable answer with markdown for chat bubbles
@@ -373,13 +392,18 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
             if len(sentence) < 30 or len(sentence) > 200:  # Skip very short or very long
                 continue
             
+            # Skip if it's just a header or label
+            sentence_lower = sentence.lower()
+            if sentence.endswith(':') or sentence.isupper():
+                continue
+            if any(skip in sentence_lower for skip in ['key financial highlights', 'executive summary', 'report period']):
+                continue
+            
             # Skip duplicate-like content
-            sent_key = sentence.lower()[:50]
+            sent_key = sentence_lower[:50]
             if sent_key in seen_content:
                 continue
             seen_content.add(sent_key)
-            
-            sentence_lower = sentence.lower()
             
             # Prioritize sentences with query keywords
             if any(word in sentence_lower for word in query_words):
