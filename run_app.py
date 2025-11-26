@@ -14,7 +14,7 @@ def main():
     """Run document indexing, then start the app"""
     
     print("=" * 80)
-    print("RAG Chatbot - Startup")
+    print("RAG Chatbot - Company Data Q&A System")
     print("=" * 80)
     
     # Check if chroma_db exists

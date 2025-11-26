@@ -146,15 +146,20 @@ def create_gradio_interface():
     ) as demo:
         gr.Markdown(
             """
-            # 📚 RAG Chatbot - Intelligent Document Q&A
+            # 🏢 Company Data Q&A System
             
-            Ask questions about the indexed documents and get accurate answers with source citations.
+            Ask questions about company documents including financials, HR policies, salaries, performance metrics, and strategic initiatives.
             
-            **How it works:**
-            1. Enter your question in natural language
-            2. The system retrieves relevant document chunks
-            3. An AI generates an answer based on the retrieved context
-            4. View source citations for transparency
+            **Pre-indexed Company Data (11 Documents):**
+            - Financial & Profitability Reports
+            - Salary & Compensation Data
+            - Department Performance & Budgets
+            - Employee Contributions & Impact
+            - Strategic Initiatives & OKRs
+            - Training & Development Programs
+            - Benefits & Work Time Analysis
+            
+            **No file upload needed** - all company documents are already indexed and ready to query!
             """
         )
         
@@ -216,21 +221,24 @@ def create_gradio_interface():
         # Example questions
         gr.Examples(
             examples=[
-                ["What is machine learning?", 3, 0.7],
                 ["What is the average salary for engineers?", 3, 0.7],
                 ["How much profit did the company make in 2025?", 3, 0.7],
-                ["What are the company's HR policies?", 3, 0.7],
-                ["Which department contributes most to revenue?", 3, 0.7],
+                ["Which department has the highest budget?", 3, 0.7],
+                ["What are the key strategic initiatives for 2025?", 3, 0.7],
+                ["What training programs are available for employees?", 3, 0.7],
+                ["How is employee performance measured?", 3, 0.7],
             ],
             inputs=[question_input, num_sources, temperature],
-            label="Example Questions"
+            label="Example Questions - Try These!"
         )
         
         gr.Markdown(
             """
             ---
-            **Note:** This chatbot uses Retrieval-Augmented Generation (RAG) to provide accurate, 
-            source-backed answers from the indexed document collection.
+            **Technology:** Uses Retrieval-Augmented Generation (RAG) with ChromaDB vector database 
+            and sentence-transformers for accurate, source-backed answers from company documents.
+            
+            **Data Source:** 11 company documents covering financials, HR, operations, and strategic planning (2025).
             """
         )
     

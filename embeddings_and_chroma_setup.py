@@ -361,7 +361,7 @@ if __name__ == "__main__":
     print("\n" + "=" * 80 + "\n")
     
     # Configuration
-    DOCUMENTS_DIR = "data/documents"
+    DOCUMENTS_DIR = "data/documents/company_data"
     CHROMA_DB_PATH = "./chroma_db"
     COLLECTION_NAME = "capstone_docs"
     REPLACE_DUPLICATES = True  # Set to False to skip duplicates instead of replacing
