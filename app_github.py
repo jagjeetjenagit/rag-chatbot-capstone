@@ -174,6 +174,9 @@ class RAGChatbot:
                 temperature=temperature
             )
             
+            # Clean up the answer formatting
+            answer = self._clean_answer(answer)
+            
             # Format sources
             sources = self._format_sources(retrieved_docs)
             
@@ -185,6 +188,25 @@ class RAGChatbot:
             logger.error(error_msg, exc_info=True)
             return f"❌ {error_msg}", ""
     
+    def _clean_answer(self, answer: str) -> str:
+        """Clean and format the answer for better readability"""
+        import re
+        
+        # Remove excessive whitespace
+        answer = re.sub(r'\n{3,}', '\n\n', answer)
+        
+        # Fix markdown headers - ensure proper spacing
+        answer = re.sub(r'(#{1,6})\s*([^\n]+)', r'\1 \2\n', answer)
+        
+        # Ensure proper spacing around bullet points
+        answer = re.sub(r'\n-\s', '\n\n- ', answer)
+        answer = re.sub(r'\n\*\s', '\n\n* ', answer)
+        
+        # Clean up any remaining formatting issues
+        answer = answer.strip()
+        
+        return answer
+    
     def _format_sources(self, docs: List[dict]) -> str:
         """Format retrieved documents as source citations"""
         if not docs:
@@ -194,14 +216,18 @@ class RAGChatbot:
         for i, doc in enumerate(docs, 1):
             source_file = doc.get('metadata', {}).get('source', 'Unknown')
             chunk_idx = doc.get('metadata', {}).get('chunk_index', 0)
-            content = doc.get('content', '')[:200]
+            content = doc.get('content', '')[:300]  # Show more context
+            
+            # Clean up the content preview
+            content = content.replace('\n', ' ').strip()
             
             sources.append(
-                f"**Source {i}:** {source_file} (Chunk {chunk_idx})\n"
-                f"```\n{content}...\n```\n"
+                f"### 📄 Source {i}: {source_file}\n"
+                f"**Chunk:** {chunk_idx}\n\n"
+                f"> {content}...\n"
             )
         
-        return "\n".join(sources)
+        return "\n---\n\n".join(sources)
 
 
 def create_gradio_interface():
@@ -286,14 +312,16 @@ def create_gradio_interface():
         
         with gr.Row():
             with gr.Column():
-                answer_output = gr.Textbox(
+                answer_output = gr.Markdown(
                     label="Answer",
-                    lines=10,
-                    interactive=False
+                    value=""
                 )
-                
+        
+        with gr.Row():
+            with gr.Column():
                 sources_output = gr.Markdown(
-                    label="Sources"
+                    label="📚 Sources & References",
+                    value=""
                 )
         
         # Event handlers
