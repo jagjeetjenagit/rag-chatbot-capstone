@@ -14,11 +14,11 @@ except ImportError:
 logger = logging.getLogger(__name__)
 
 # Global client instance
-_chroma_client: Optional[chromadb.PersistentClient] = None
+_chroma_client = None
 _chroma_db_path: Optional[str] = None
 
 
-def get_chroma_client(chroma_db_path: str = "./chroma_db") -> chromadb.PersistentClient:
+def get_chroma_client(chroma_db_path: str = "./chroma_db"):
     """
     Get or create a singleton ChromaDB client.
     
@@ -47,13 +47,24 @@ def get_chroma_client(chroma_db_path: str = "./chroma_db") -> chromadb.Persisten
     
     # Create new client
     logger.info(f"Creating new ChromaDB client for: {chroma_db_path}")
-    _chroma_client = chromadb.PersistentClient(
-        path=str(db_path),
-        settings=Settings(
-            anonymized_telemetry=False,
-            allow_reset=True
+    try:
+        # Try newer API first (chromadb >= 0.4.0)
+        _chroma_client = chromadb.PersistentClient(
+            path=str(db_path),
+            settings=Settings(
+                anonymized_telemetry=False,
+                allow_reset=True
+            )
         )
-    )
+    except AttributeError:
+        # Fall back to older API (chromadb < 0.4.0)
+        _chroma_client = chromadb.Client(
+            Settings(
+                chroma_db_impl="duckdb+parquet",
+                persist_directory=str(db_path),
+                anonymized_telemetry=False
+            )
+        )
     _chroma_db_path = chroma_db_path
     
     return _chroma_client
