@@ -319,22 +319,47 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
     best_chunk = chunk_scores[0][1]
     chunk_text = best_chunk.get('text', '')
     
-    # Simple sentence extraction (first 2 sentences with query words)
-    sentences = re.split(r'[.!?]+', chunk_text)
+    # Clean the text - remove excessive headers and formatting
+    # Remove markdown headers
+    chunk_text = re.sub(r'^#{1,6}\s+', '', chunk_text, flags=re.MULTILINE)
+    # Remove multiple asterisks (bold markers)
+    chunk_text = re.sub(r'\*\*([^*]+)\*\*', r'\1', chunk_text)
+    # Remove report metadata lines
+    chunk_text = re.sub(r'\*\*[^:]+\*\*:\s*[^\n]+\n', '', chunk_text)
+    # Remove horizontal rules
+    chunk_text = re.sub(r'^-{3,}\s*$', '', chunk_text, flags=re.MULTILINE)
+    # Clean up multiple newlines
+    chunk_text = re.sub(r'\n{3,}', '\n\n', chunk_text)
+    
+    # Simple sentence extraction (first 3-4 sentences with query words)
+    sentences = re.split(r'[.!?]+\s+', chunk_text.strip())
     relevant_sentences = []
     
-    for sentence in sentences[:5]:  # Check first 5 sentences
+    for sentence in sentences[:10]:  # Check first 10 sentences
+        sentence = sentence.strip()
+        if not sentence or len(sentence) < 20:  # Skip very short sentences
+            continue
         sentence_lower = sentence.lower()
         if any(word in sentence_lower for word in query_words):
-            relevant_sentences.append(sentence.strip())
-            if len(relevant_sentences) >= 2:
+            relevant_sentences.append(sentence)
+            if len(relevant_sentences) >= 3:
                 break
     
     if relevant_sentences:
-        answer = '. '.join(relevant_sentences) + '.'
+        # Create a clean, formatted answer
+        answer = '. '.join(relevant_sentences)
+        if not answer.endswith('.'):
+            answer += '.'
     else:
-        # Fallback to first sentence of best chunk
-        answer = sentences[0].strip() + '.' if sentences else chunk_text[:200] + '...'
+        # Fallback: extract key information from chunk
+        # Find first substantive sentence (at least 30 chars)
+        for sent in sentences:
+            sent = sent.strip()
+            if len(sent) >= 30:
+                answer = sent + '.'
+                break
+        else:
+            answer = chunk_text[:300].strip() + '...'
     
     # Calculate confidence based on keyword overlap
     max_overlap = chunk_scores[0][2]

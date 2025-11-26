@@ -192,6 +192,31 @@ class RAGChatbot:
         """Clean and format the answer for better readability"""
         import re
         
+        # Remove document metadata (Report Period, Prepared by, etc.)
+        answer = re.sub(r'\*\*[^:]+\*\*:\s*[^\n]+\n?', '', answer)
+        
+        # Remove markdown headers at the start if they're document titles
+        lines = answer.split('\n')
+        cleaned_lines = []
+        skip_headers = True
+        
+        for line in lines:
+            # Skip initial headers and metadata
+            if skip_headers:
+                if line.strip().startswith('#') or line.strip().startswith('**'):
+                    continue
+                elif line.strip().startswith('---'):
+                    continue
+                elif not line.strip():
+                    continue
+                else:
+                    skip_headers = False
+            
+            if not skip_headers:
+                cleaned_lines.append(line)
+        
+        answer = '\n'.join(cleaned_lines).strip()
+        
         # Remove excessive whitespace
         answer = re.sub(r'\n{3,}', '\n\n', answer)
         
@@ -202,10 +227,11 @@ class RAGChatbot:
         answer = re.sub(r'\n-\s', '\n\n- ', answer)
         answer = re.sub(r'\n\*\s', '\n\n* ', answer)
         
-        # Clean up any remaining formatting issues
-        answer = answer.strip()
+        # Remove remaining bold markers if they're excessive
+        # Keep them if they're actual emphasis, remove if they're formatting artifacts
+        answer = re.sub(r'\*\*(\w+)\*\*:', r'\1:', answer)
         
-        return answer
+        return answer.strip()
     
     def _format_sources(self, docs: List[dict]) -> str:
         """Format retrieved documents as source citations"""
