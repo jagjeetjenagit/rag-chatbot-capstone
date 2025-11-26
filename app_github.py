@@ -58,6 +58,69 @@ class RAGChatbot:
             logger.error(f"❌ Failed to initialize RAG Chatbot: {e}", exc_info=True)
             raise
     
+    def upload_documents(self, files):
+        """Upload and index new documents"""
+        if not files:
+            return "⚠️ No files uploaded."
+        
+        try:
+            from ingestion import DocumentIngestor
+            from embeddings_and_chroma_setup import ChromaDBSetup
+            
+            # Initialize document processor
+            ingestor = DocumentIngestor(
+                documents_dir="data/documents/company_data",
+                chunk_size_min=500,
+                chunk_size_max=800,
+                overlap_percent=10
+            )
+            
+            all_chunks = []
+            processed = []
+            failed = []
+            
+            for file in files:
+                try:
+                    chunks = ingestor.load_and_process_file(file.name)
+                    if chunks:
+                        all_chunks.extend(chunks)
+                        processed.append(file.name.split('/')[-1])
+                    else:
+                        failed.append(file.name.split('/')[-1])
+                except Exception as e:
+                    failed.append(f"{file.name.split('/')[-1]}: {str(e)}")
+            
+            # Index new documents
+            if all_chunks:
+                chroma_setup = ChromaDBSetup(
+                    chroma_db_path="./chroma_db",
+                    collection_name="capstone_docs",
+                    replace_duplicates=True
+                )
+                stats = chroma_setup.upsert_chunks(all_chunks)
+                
+                # Reinitialize retriever to pick up new docs
+                self.retriever = DocumentRetriever(
+                    chroma_db_path="./chroma_db",
+                    collection_name="capstone_docs",
+                    similarity_threshold=0.2
+                )
+                
+                result = f"✅ Processed {len(processed)} file(s)\n"
+                result += f"📊 Added {stats['new']} chunks, Updated {stats['updated']}\n"
+                result += f"📚 Total documents: {stats['final_count']}"
+                
+                if failed:
+                    result += f"\n\n⚠️ Failed: {', '.join(failed)}"
+                
+                return result
+            else:
+                return "❌ No valid documents to process"
+                
+        except Exception as e:
+            logger.error(f"Upload error: {e}", exc_info=True)
+            return f"❌ Error: {str(e)}"
+    
     def answer_question(
         self, 
         question: str, 
@@ -163,9 +226,23 @@ def create_gradio_interface():
             - Training & Development Programs
             - Benefits & Work Time Analysis
             
-            **No file upload needed** - all company documents are already indexed and ready to query!
+            You can also **upload your own documents** (PDF, TXT, DOCX) to expand the knowledge base!
             """
         )
+        
+        # Upload Section
+        with gr.Accordion("📤 Upload New Documents", open=False):
+            with gr.Row():
+                file_upload = gr.File(
+                    label="Select Files",
+                    file_count="multiple",
+                    file_types=[".pdf", ".txt", ".docx"],
+                    type="filepath"
+                )
+            upload_btn = gr.Button("Upload & Index", variant="secondary")
+            upload_status = gr.Textbox(label="Upload Status", lines=4, interactive=False)
+        
+        gr.Markdown("---")
         
         with gr.Row():
             with gr.Column(scale=2):
@@ -220,6 +297,12 @@ def create_gradio_interface():
             fn=lambda: ("", "", ""),
             inputs=[],
             outputs=[question_input, answer_output, sources_output]
+        )
+        
+        upload_btn.click(
+            fn=chatbot.upload_documents,
+            inputs=[file_upload],
+            outputs=[upload_status]
         )
         
         # Example questions
