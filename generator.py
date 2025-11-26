@@ -394,20 +394,19 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
             # Limit to top 3-4 most relevant points for cleaner display
             answer_parts = answer_parts[:4]
             
-            # Format as bullet points if multiple items, otherwise paragraph
-            if len(answer_parts) > 2:
-                # Clean each part individually first
-                clean_parts = []
-                for part in answer_parts:
-                    # Normalize spaces within each bullet point
-                    clean_part = re.sub(r'\s+', ' ', part.strip())
-                    clean_parts.append(clean_part)
-                # Use HTML breaks for proper rendering in Gradio
-                answer = '<br/><br/>'.join(f"• {part}" for part in clean_parts)
-            else:
-                # For 1-2 items, show as paragraphs
-                clean_parts = [re.sub(r'\s+', ' ', part.strip()) for part in answer_parts]
-                answer = '<br/><br/>'.join(clean_parts)
+            # Format with clear visual separation
+            formatted_parts = []
+            for i, part in enumerate(answer_parts, 1):
+                # Normalize spaces within each point
+                clean_part = re.sub(r'\s+', ' ', part.strip())
+                if len(answer_parts) > 2:
+                    # Numbered list for clarity
+                    formatted_parts.append(f"{i}. {clean_part}")
+                else:
+                    formatted_parts.append(clean_part)
+            
+            # Join with double newlines
+            answer = "\n\n".join(formatted_parts)
         else:
             answer = best_section[:400].strip() + '...'
     else:
