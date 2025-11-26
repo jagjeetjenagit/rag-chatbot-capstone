@@ -364,13 +364,13 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
         # Split into sentences
         sentences = re.split(r'(?<=[.!?])\s+', best_section)
         
-        # Build a clean answer with key points
+        # Build a SHORT, clean answer - max 2-3 key points
         answer_parts = []
         seen_content = set()
         
-        for sentence in sentences[:20]:
+        for sentence in sentences[:15]:
             sentence = sentence.strip()
-            if len(sentence) < 30:
+            if len(sentence) < 30 or len(sentence) > 200:  # Skip very short or very long
                 continue
             
             # Skip duplicate-like content
@@ -384,36 +384,37 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
             # Prioritize sentences with query keywords
             if any(word in sentence_lower for word in query_words):
                 answer_parts.append(sentence)
-            elif len(answer_parts) < 2:  # Include first 2 sentences even without keywords
-                answer_parts.append(sentence)
-            
-            if len(answer_parts) >= 5:
-                break
+                if len(answer_parts) >= 2:  # Stop at 2 good sentences
+                    break
         
         if answer_parts:
-            # Limit to top 3-4 most relevant points for cleaner display
-            answer_parts = answer_parts[:4]
+            # STRICT LIMIT: Max 2 sentences for concise answers
+            answer_parts = answer_parts[:2]
             
-            # Format with clear visual separation
-            formatted_parts = []
-            for i, part in enumerate(answer_parts, 1):
-                # Normalize spaces within each point
-                clean_part = re.sub(r'\s+', ' ', part.strip())
-                if len(answer_parts) > 2:
-                    # Numbered list for clarity
-                    formatted_parts.append(f"{i}. {clean_part}")
-                else:
-                    formatted_parts.append(clean_part)
-            
-            # Join with double newlines
-            answer = "\n\n".join(formatted_parts)
+            # Simple paragraph format - no numbering if just 1-2 items
+            clean_parts = [re.sub(r'\s+', ' ', part.strip()) for part in answer_parts]
+            answer = "\n\n".join(clean_parts)
         else:
-            answer = best_section[:400].strip() + '...'
+            # Fallback: just take first good sentence
+            for s in sentences[:10]:
+                s = s.strip()
+                if 30 < len(s) < 200:
+                    answer = re.sub(r'\s+', ' ', s)
+                    break
+            else:
+                answer = best_section[:200].strip() + '...'
     else:
-        # Last resort: get first meaningful content
+        # Last resort: get first meaningful content - KEEP IT SHORT
         clean_text = re.sub(r'\s*\|\s*', ', ', chunk_text)
         clean_text = re.sub(r'\s*—\s*', ' - ', clean_text)
-        answer = clean_text[:300].strip() + '...'
+        # Extract just first sentence
+        sentences = re.split(r'(?<=[.!?])\s+', clean_text)
+        for s in sentences[:5]:
+            if 30 < len(s) < 200:
+                answer = s.strip()
+                break
+        else:
+            answer = clean_text[:150].strip() + '...'
     
     # Final cleanup - preserve paragraph/bullet structure
     answer = re.sub(r'\n{3,}', '\n\n', answer)
