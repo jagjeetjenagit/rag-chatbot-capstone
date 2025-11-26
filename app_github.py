@@ -79,9 +79,9 @@ class RAGChatbot:
             
             # Retrieve relevant documents
             logger.info(f"Retrieving top {num_sources} relevant documents...")
-            retrieved_docs = self.retriever.retrieve(
+            retrieved_docs = self.retriever.get_top_k(
                 query=question,
-                n_results=num_sources
+                k=num_sources
             )
             
             if not retrieved_docs:
