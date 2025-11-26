@@ -200,21 +200,23 @@ class RAGChatbot:
             return history, ""
     
     def _clean_answer(self, answer: str) -> str:
-        """Clean and format the answer for better readability"""
+        """Clean and format the answer for better readability in chat bubbles"""
         import re
         
-        # Just do minimal cleanup - let the answer keep its structure
-        # Remove excessive blank lines
+        # Remove ALL markdown syntax for clean chat display
+        answer = re.sub(r'\*\*([^*]+)\*\*', r'\1', answer)  # Remove bold
+        answer = re.sub(r'#{1,6}\s*', '', answer)  # Remove headers
+        answer = re.sub(r'^-{3,}\s*$', '', answer, flags=re.MULTILINE)  # Remove horizontal rules
+        
+        # Remove document metadata
+        answer = re.sub(r'Report Period:[^\n]+', '', answer)
+        answer = re.sub(r'Prepared by:[^\n]+', '', answer)
+        answer = re.sub(r'Report Date:[^\n]+', '', answer)
+        answer = re.sub(r'Classification:[^\n]+', '', answer)
+        
+        # Clean up excessive whitespace but preserve line breaks
         answer = re.sub(r'\n{3,}', '\n\n', answer)
-        
-        # Remove any remaining document metadata artifacts
-        answer = re.sub(r'\*\*Report Period\*\*:[^\n]+', '', answer)
-        answer = re.sub(r'\*\*Prepared by\*\*:[^\n]+', '', answer)
-        answer = re.sub(r'\*\*Report Date\*\*:[^\n]+', '', answer)
-        answer = re.sub(r'\*\*Classification\*\*:[^\n]+', '', answer)
-        
-        # Remove horizontal rules
-        answer = re.sub(r'^-{3,}\s*$', '', answer, flags=re.MULTILINE)
+        answer = re.sub(r' {2,}', ' ', answer)  # Multiple spaces to single
         
         return answer.strip()
     

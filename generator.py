@@ -356,10 +356,12 @@ def rule_based_generate(query: str, chunks: List[Dict[str, Any]]) -> Dict[str, A
     
     if best_section:
         # Create a structured, readable answer
-        # Remove inline formatting clutter
-        best_section = re.sub(r'\*\*([^*]+)\*\*', r'**\1**', best_section)  # Keep bold but clean it
+        # Remove ALL markdown and formatting for clean chat display
+        best_section = re.sub(r'\*\*([^*]+)\*\*', r'\1', best_section)  # Remove bold markers
+        best_section = re.sub(r'#{1,6}\s*', '', best_section)  # Remove markdown headers
         best_section = re.sub(r'\s*—\s*', ' - ', best_section)  # Clean dashes
         best_section = re.sub(r'\s*\|\s*', ', ', best_section)  # Replace pipes with commas
+        best_section = re.sub(r'-{3,}', '', best_section)  # Remove horizontal rules
         
         # Split into sentences
         sentences = re.split(r'(?<=[.!?])\s+', best_section)
